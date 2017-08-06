@@ -21,7 +21,6 @@
 		</div>
 	</header>
 	<main>
-		<div id="maismais"></div>
 		<section id="temp">
 			<table id="list-words">
 				<thead>

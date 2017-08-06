@@ -1,13 +1,14 @@
 function walks_array(word_tr, behavior) {
 	for(var actualposition = 0;actualposition <= word_tr.length - 1;actualposition++){
 		var word_datas = word_tr[actualposition];
-		// var word_all = word_tr;
-		// console.log(word_all)
-		behavior(word_datas)
+		var bluman = actualposition[0];
+		behavior(word_datas);
 	}
 }
 
+var array_WordsList = []; //Empty array for recieve words
 var word_tr = document.getElementsByClassName('word');
+
 
 
 walks_array(word_tr, function (word_datas){
@@ -25,27 +26,21 @@ walks_array(word_tr, function (word_datas){
 		translate : translate.textContent
 	}
 
-	console.log(word);
-	maismais = document.getElementById('maismais');
-	maismais.innerHTML = maismais.innerHTML + word.article;
-	// var itensList = [];
-	// cocou = itensList.push(word);
-	// cocouu = itensList.indexOf(word);
-	// console.log(cocou);
-	// console.log(cocouu);
-	// console.log(itensList);
+	//***********************************
+	//Insert word in array
+	var addWord = array_WordsList.push(word);
+	//***********************************
+
 	return word;
 });
 
-// var arr = [];
-// var obj1 = {id: 1, nome: 'Wallace'}
-// arr.push(obj1);
-// arr.indexOf(obj1)
+// Generate a random number between 0 and array length
+var randomWord = Math.floor(Math.random()*array_WordsList.length);
 
-// console.log(arr);
-// console.log(obj1);
-// var coco = arr.push(obj1);
 
-// console.log(arr.push(obj1););
-// console.log(coco);
-// console.log(arr.indexOf(obj1));
+maismais = document.getElementById('maismais');
+// maismais.innerHTML = maismais.innerHTML + array_WordsList[geraumnumero];
+maismais.innerHTML = maismais.innerHTML + array_WordsList[geraumnumero].word_singular;
+// console.log(geraumnumero);
+console.log(array_WordsList[geraumnumero]);
+console.log(array_WordsList[geraumnumero].word_singular);
