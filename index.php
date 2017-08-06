@@ -34,21 +34,21 @@
 				</thead>
 				<tbody>
 					<tr class="word">
-						<td class="article">Der </td>
+						<td class="article">der</td>
 						<td class="word-singular">Beruf</td>
 						<td class="plural">Die Berufe</td>
 						<td class="information">Informacao</td>
 						<td class="translate">A profissao</td>
 					</tr>
 					<tr class="word">
-						<td class="article">Die</td>
+						<td class="article">die</td>
 						<td class="word-singular">Zahl</td>
 						<td class="plural">Die Zahlen</td>
 						<td class="information">Informacao</td>
 						<td class="translate">O valor</td>
 					</tr>
 					<tr class="word">
-						<td class="article">Das</td>
+						<td class="article">das</td>
 						<td class="word-singular">Haus</td>
 						<td class="plural">Die Haeuser</td>
 						<td class="information">Informacao</td>
@@ -65,9 +65,9 @@
 			<div class="wp-translate"></div>
 		</section>
 		<nav id="buttons">
-			<button id="der">Der</button>
-			<button id="der">Die</button>
-			<button id="das">Das</button>
+			<button class="button" id="der" value="der">Der</button>
+			<button class="button" id="die" value="die">Die</button>
+			<button class="button" id="das" value="das">Das</button>
 		</nav>
 	</main>
 
