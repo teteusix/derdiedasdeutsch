@@ -41,14 +41,14 @@
 						<td class="translate">A profissao</td>
 					</tr>
 					<tr class="word">
-						<td class="article">Die </td>
+						<td class="article">Die</td>
 						<td class="word-singular">Zahl</td>
 						<td class="plural">Die Zahlen</td>
 						<td class="information">Informacao</td>
 						<td class="translate">O valor</td>
 					</tr>
 					<tr class="word">
-						<td class="article">Das </td>
+						<td class="article">Das</td>
 						<td class="word-singular">Haus</td>
 						<td class="plural">Die Haeuser</td>
 						<td class="information">Informacao</td>
@@ -59,10 +59,10 @@
 		</section>
 		<section id="words">
 			<div class="status">Certo/ Errado</div>
-			<div class="main">Beruf</div>
-			<div class="info">informacao</div>
-			<div class="plurall">Die Berufe</div>
-			<div class="translatee">A profissão</div>
+			<div id="word-platz"></div>
+			<div class="wp-info"></div>
+			<div class="wp-plural"></div>
+			<div class="wp-translate"></div>
 		</section>
 		<nav id="buttons">
 			<button id="der">Der</button>

@@ -38,9 +38,20 @@ walks_array(word_tr, function (word_datas){
 var randomWord = Math.floor(Math.random()*array_WordsList.length);
 
 
-maismais = document.getElementById('maismais');
-// maismais.innerHTML = maismais.innerHTML + array_WordsList[geraumnumero];
-maismais.innerHTML = maismais.innerHTML + array_WordsList[geraumnumero].word_singular;
-// console.log(geraumnumero);
-console.log(array_WordsList[geraumnumero]);
-console.log(array_WordsList[geraumnumero].word_singular);
+//PRINT WORD
+var wordPlatz = document.querySelector('#word-platz'),
+	wp_information = document.getElementsByClassName('wp-info')[0],
+	wp_plural = document.getElementsByClassName('wp-plural')[0],
+	wp_translate = document.getElementsByClassName('wp-translate')[0];
+
+// word in singular
+wordPlatz.innerHTML = wordPlatz.innerHTML + array_WordsList[randomWord].word_singular;
+// word in singular
+wp_information.innerHTML = wp_information.innerHTML + array_WordsList[randomWord].information;
+// word in singular
+wp_plural.innerHTML = wp_plural.innerHTML + array_WordsList[randomWord].plural;
+// word in singular
+wp_translate.innerHTML = wp_translate.innerHTML + array_WordsList[randomWord].translate;
+
+console.log(array_WordsList[randomWord]);
+console.log(array_WordsList[randomWord].word_singular);
