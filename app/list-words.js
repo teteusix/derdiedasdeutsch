@@ -1,4 +1,14 @@
 
+// SET INITIAL VALUE
+var score_val = 0;
+
+// GENERATE A DYNAMIC ID FOR MODULE
+function newScore() {
+	return window.score_val += 1;
+}
+
+
+
 var word_tr = document.getElementsByClassName('word');
 var array_WordsList = []; //Empty array for recieve words
 
@@ -9,6 +19,8 @@ function firstTurn(){
 firstTurn();
 
 function nextTurn() {
+	var score_val = newScore();
+
 	function walks_array(word_tr, behavior) {
 		for(var actualposition = 0;actualposition <= word_tr.length - 1;actualposition++){
 			var word_datas = word_tr[actualposition];
@@ -88,47 +100,13 @@ function nextTurn() {
 		btn_das.setAttribute('onclick','nextTurn()');
 	}
 
+	// get value score after insert new score
+	document.getElementById('score').getAttribute('value');
+	document.getElementById('score').setAttribute('value', score_val);
 }
 
-
-
-
-// var btns = document.querySelectorAll('button');
-// // btns.addEventListener('click', check());
-// btns.addEventListener('click', function(event) {
-// 	console.log('foi clicado')
-// });
-
-
-
-// function check() {
-// 	if (article_Actualword === btn_der.value) {
-// 		console.log('Cliquei no certo');
-// 	} else if (article_Actualword === 'die') {
-// 		console.log('o certo é die');
-// 	}else {
-// 		console.log('o certo é das');
-// 	}
-// }
-
-
-
-// function nextTurn() {
-// 	console.log('Acertou mizeravel');
-// }
 function endGame() {
 	console.log('Errooouu');
+	document.getElementById('words').innerHTML = 'Errouuuuu';
+	document.getElementById('buttons').style.display = 'none';
 }
-
-// btn_der.addEventListener("click", function(event) {
-// 	console.log('Cliquei no botao '+btn_der.value);
-// 	// console.log(array_WordsList[randomWord].article);
-// 	// console.log(this.value);
-
-// 	var article_Actualword = array_WordsList[randomWord].article;
-// 	if (this.value == article_Actualword) {
-// 		console.log('Ta certo');
-// 	} else {
-// 		console.log('Ta errado');
-// 	}
-// });

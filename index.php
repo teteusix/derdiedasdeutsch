@@ -37,21 +37,21 @@
 						<td class="article">der</td>
 						<td class="word-singular">Beruf</td>
 						<td class="plural">Die Berufe</td>
-						<td class="information">Informacao</td>
+						<td class="information"></td>
 						<td class="translate">A profissao</td>
 					</tr>
 					<tr class="word">
 						<td class="article">die</td>
 						<td class="word-singular">Zahl</td>
 						<td class="plural">Die Zahlen</td>
-						<td class="information">Informacao</td>
+						<td class="information"></td>
 						<td class="translate">O valor</td>
 					</tr>
 					<tr class="word">
 						<td class="article">das</td>
 						<td class="word-singular">Haus</td>
-						<td class="plural">Die Haeuser</td>
-						<td class="information">Informacao</td>
+						<td class="plural">Die Häuser</td>
+						<td class="information"></td>
 						<td class="translate">A casa</td>
 					</tr>
 				</tbody>
@@ -69,6 +69,11 @@
 			<button class="button" id="die" value="die">Die</button>
 			<button class="button" id="das" value="das">Das</button>
 		</nav>
+
+		<div class="result">
+			<p>Score</p>
+			<input type="text" id="score" name="score" value="0" disabled>
+		</div>
 	</main>
 
 	<!-- <script src="app/app.js"></script> -->
