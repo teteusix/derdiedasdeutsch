@@ -14,10 +14,13 @@
 		</nav>
 		<div class="status">
 			<ul>
-				<li>Acertos</li>
-				<li>Erros</li>
-				<li>10 Palavras de 20</li>
+				<!-- <li><span id="totalwords_1"></span> Palavras de <span id="totalwords_2"></span></li> -->
 			</ul>
+
+			<div class="result">
+				<p>Score</p>
+				<input type="text" id="score" name="score" value="0" disabled>
+			</div>
 		</div>
 	</header>
 	<main>
@@ -69,11 +72,6 @@
 			<button class="button" id="die" value="die">Die</button>
 			<button class="button" id="das" value="das">Das</button>
 		</nav>
-
-		<div class="result">
-			<p>Score</p>
-			<input type="text" id="score" name="score" value="0" disabled>
-		</div>
 	</main>
 
 	<!-- <script src="app/app.js"></script> -->

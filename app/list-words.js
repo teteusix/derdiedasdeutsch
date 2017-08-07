@@ -109,4 +109,5 @@ function endGame() {
 	console.log('Errooouu');
 	document.getElementById('words').innerHTML = 'Errouuuuu';
 	document.getElementById('buttons').style.display = 'none';
+	document.getElementById('score').value = 0;
 }
