@@ -24,42 +24,6 @@
 		</div>
 	</header>
 	<main>
-		<section id="temp">
-			<table id="list-words">
-				<thead>
-					<tr>
-						<th>Artigo</th>
-						<th>Palavra</th>
-						<th>Plural</th>
-						<th>Informacao</th>
-						<th>Traducao</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="word">
-						<td class="article">der</td>
-						<td class="word-singular">Beruf</td>
-						<td class="plural">Die Berufe</td>
-						<td class="information"></td>
-						<td class="translate">A profissao</td>
-					</tr>
-					<tr class="word">
-						<td class="article">die</td>
-						<td class="word-singular">Zahl</td>
-						<td class="plural">Die Zahlen</td>
-						<td class="information"></td>
-						<td class="translate">O valor</td>
-					</tr>
-					<tr class="word">
-						<td class="article">das</td>
-						<td class="word-singular">Haus</td>
-						<td class="plural">Die Häuser</td>
-						<td class="information"></td>
-						<td class="translate">A casa</td>
-					</tr>
-				</tbody>
-			</table>
-		</section>
 		<section id="words">
 			<div class="status">Certo/ Errado</div>
 			<div id="word-platz"></div>
@@ -67,11 +31,35 @@
 			<div class="wp-plural"></div>
 			<div class="wp-translate"></div>
 		</section>
+		<?php include 'wordlist.php'; ?>
 		<nav id="buttons">
 			<button class="button" id="der" value="der">Der</button>
 			<button class="button" id="die" value="die">Die</button>
 			<button class="button" id="das" value="das">Das</button>
 		</nav>
+		<p><strong>Palavras que já foram</strong></p>
+		<table id="removed-words">
+			<thead>
+				<tr>
+					<th>Artigo</th>
+					<th>Palavra</th>
+					<th>Plural</th>
+					<th>Informacao</th>
+					<th>Traducao</th>
+					<th>Nivel</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="rw_word">
+					<td class="rw_article"></td>
+					<td class="rw_word-singular"></td>
+					<td class="rw_plural"></td>
+					<td class="rw_information"></td>
+					<td class="rw_translate"></td>
+					<td class="rw_nivel"></td>
+				</tr>
+			</tbody>
+		</table>
 	</main>
 
 	<!-- <script src="app/app.js"></script> -->

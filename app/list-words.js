@@ -11,6 +11,7 @@ function newScore() {
 
 var word_tr = document.getElementsByClassName('word');
 var array_WordsList = []; //Empty array for recieve words
+var array_wordUsed = []; //Empty array for recieve used words
 
 function firstTurn(){
 	nextTurn();
@@ -19,6 +20,7 @@ function firstTurn(){
 firstTurn();
 
 function nextTurn() {
+	console.log('Score ')
 	var score_val = newScore();
 
 	function walks_array(word_tr, behavior) {
@@ -50,13 +52,13 @@ function nextTurn() {
 		//Insert word in array
 		var addWord = array_WordsList.push(word);
 		//***********************************
-		// nextTurn();
+
 		return word;
 	});
 
 	// Generate a random number between 0 and array length
 	var randomWord = Math.floor(Math.random()*array_WordsList.length);
-
+	console.log(randomWord);
 
 	//PRINT WORD
 	var wordPlatz = document.querySelector('#word-platz'),
@@ -76,6 +78,12 @@ function nextTurn() {
 	console.log(array_WordsList[randomWord]);
 	console.log(array_WordsList[randomWord].word_singular);
 
+	console.log(array_WordsList.length);
+	//***********************************
+	//Insert word in array
+	// var addUsedWord = array_wordUsed.push(array_WordsList[randomWord]);
+	//***********************************
+
 	var btn_der = document.querySelector('#der');
 	var btn_die = document.querySelector('#die');
 	var btn_das = document.querySelector('#das');
@@ -83,11 +91,18 @@ function nextTurn() {
 	console.log(article_Actualword);
 	console.log('começou');
 
+	console.log(array_WordsList.length);
 	if (article_Actualword === 'der') {
 		console.log('o certo é der');
 		btn_der.setAttribute('onclick','nextTurn()');
 		btn_die.setAttribute('onclick','endGame()');
 		btn_das.setAttribute('onclick','endGame()');
+
+		//***********************************
+		// array_WordsList.slice(2, 1);
+		// console.log(array_WordsList.slice(2, 1));
+		//***********************************
+		console.log(array_WordsList.length);
 	} else if (article_Actualword === 'die') {
 		console.log('o certo é die');
 		btn_der.setAttribute('onclick','endGame()');
