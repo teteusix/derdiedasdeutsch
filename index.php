@@ -6,12 +6,6 @@
 </head>
 <body>
 	<header>
-		<nav id="game">
-			<ul class="options">
-				<li>Help</li>
-				<li>Config</li>
-			</ul>
-		</nav>
 		<div class="status">
 			<ul>
 				<!-- <li><span id="totalwords_1"></span> Palavras de <span id="totalwords_2"></span></li> -->

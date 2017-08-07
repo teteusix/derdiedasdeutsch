@@ -20,7 +20,6 @@ function firstTurn(){
 firstTurn();
 
 function nextTurn() {
-	console.log('Score ')
 	var score_val = newScore();
 
 	function walks_array(word_tr, behavior) {
@@ -58,7 +57,6 @@ function nextTurn() {
 
 	// Generate a random number between 0 and array length
 	var randomWord = Math.floor(Math.random()*array_WordsList.length);
-	console.log(randomWord);
 
 	//PRINT WORD
 	var wordPlatz = document.querySelector('#word-platz'),
@@ -75,10 +73,7 @@ function nextTurn() {
 	// word in singular
 	wp_translate.innerHTML = array_WordsList[randomWord].translate;
 
-	console.log(array_WordsList[randomWord]);
-	console.log(array_WordsList[randomWord].word_singular);
 
-	console.log(array_WordsList.length);
 	//***********************************
 	//Insert word in array
 	// var addUsedWord = array_wordUsed.push(array_WordsList[randomWord]);
@@ -88,12 +83,8 @@ function nextTurn() {
 	var btn_die = document.querySelector('#die');
 	var btn_das = document.querySelector('#das');
 	var article_Actualword = array_WordsList[randomWord].article;
-	console.log(article_Actualword);
-	console.log('começou');
 
-	console.log(array_WordsList.length);
 	if (article_Actualword === 'der') {
-		console.log('o certo é der');
 		btn_der.setAttribute('onclick','nextTurn()');
 		btn_die.setAttribute('onclick','endGame()');
 		btn_das.setAttribute('onclick','endGame()');
@@ -102,14 +93,11 @@ function nextTurn() {
 		// array_WordsList.slice(2, 1);
 		// console.log(array_WordsList.slice(2, 1));
 		//***********************************
-		console.log(array_WordsList.length);
 	} else if (article_Actualword === 'die') {
-		console.log('o certo é die');
 		btn_der.setAttribute('onclick','endGame()');
 		btn_die.setAttribute('onclick','nextTurn()');
 		btn_das.setAttribute('onclick','endGame()');
 	}else {
-		console.log('o certo é das');
 		btn_der.setAttribute('onclick','endGame()');
 		btn_die.setAttribute('onclick','endGame()');
 		btn_das.setAttribute('onclick','nextTurn()');
@@ -121,7 +109,6 @@ function nextTurn() {
 }
 
 function endGame() {
-	console.log('Errooouu');
 	document.getElementById('words').innerHTML = 'Errouuuuu';
 	document.getElementById('buttons').style.display = 'none';
 	document.getElementById('score').value = 0;
