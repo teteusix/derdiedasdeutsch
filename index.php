@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Der Die Das</title>
+	<link rel="stylesheet" href="">
 </head>
 <body>
-	<header>
+	<header id="header">
 		<div class="status">
 			<ul>
 				<!-- <li><span id="totalwords_1"></span> Palavras de <span id="totalwords_2"></span></li> -->
@@ -19,7 +20,7 @@
 	</header>
 	<main>
 		<section id="words">
-			<div class="status">Certo/ Errado</div>
+			<div class="wp-result">Certo/ Errado</div>
 			<div id="word-platz"></div>
 			<div class="wp-info"></div>
 			<div class="wp-plural"></div>
@@ -31,29 +32,6 @@
 			<button class="button" id="die" value="die">Die</button>
 			<button class="button" id="das" value="das">Das</button>
 		</nav>
-		<p><strong>Palavras que já foram</strong></p>
-		<table id="removed-words">
-			<thead>
-				<tr>
-					<th>Artigo</th>
-					<th>Palavra</th>
-					<th>Plural</th>
-					<th>Informacao</th>
-					<th>Traducao</th>
-					<th>Nivel</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class="rw_word">
-					<td class="rw_article"></td>
-					<td class="rw_word-singular"></td>
-					<td class="rw_plural"></td>
-					<td class="rw_information"></td>
-					<td class="rw_translate"></td>
-					<td class="rw_nivel"></td>
-				</tr>
-			</tbody>
-		</table>
 	</main>
 
 	<!-- <script src="app/app.js"></script> -->

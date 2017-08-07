@@ -1,0 +1,21 @@
+header#header {}
+#header .status {}
+#header .status ul {}
+#header .status .result {}
+#header .status .result p {}
+#header .status .result input {}
+
+main {}
+
+#words .status {}
+#words #word-platz {}
+#words .wp-result {}
+#words .wp-info {}
+#words .wp-plural {}
+#words .wp-translate {}
+
+#temp {display: none;}
+
+#buttons {}
+#buttons button {}
+#buttons button:hover {}
