@@ -4,9 +4,17 @@ var word_article = document.getElementById('word-article'),
   word_plural = document.getElementById('word-plural'),
   word_information = document.getElementById('word-info'),
   word_translate = document.getElementById('word-translate'),
+  btn_der = document.getElementById('der'),
+  btn_die = document.getElementById('die'),
+  btn_das = document.getElementById('das'),
   answer_buttons = document.getElementsByClassName('answer-button');
 
-generate_random_word();
+ document.getElementById('play').setAttribute('onclick','firstTurn()');
+
+function firstTurn(){
+  generate_random_word();
+  console.log('Você esta no seu primeiro turno');
+}
 
 function generate_random_word() {
   var random_word = words[Math.floor(Math.random()*words.length)], //generate a random word basead in the length of array
@@ -22,16 +30,29 @@ function generate_random_word() {
   } else {
     word_information.innerHTML = random_word.information;
   }
+
+  console.log(random_word.article);
+
+  if (random_word.article === 'der') {
+    btn_der.setAttribute('onclick','nextTurn()');
+    btn_die.setAttribute('onclick','endGame()');
+    btn_das.setAttribute('onclick','endGame()');
+  } else if (random_word.article === 'die') {
+    btn_der.setAttribute('onclick','endGame()');
+    btn_die.setAttribute('onclick','nextTurn()');
+    btn_das.setAttribute('onclick','endGame()');
+  }else {
+    btn_der.setAttribute('onclick','endGame()');
+    btn_die.setAttribute('onclick','endGame()');
+    btn_das.setAttribute('onclick','nextTurn()');
+  }
 }
 
-for (var i = 0; i < answer_buttons.length; i++) {
-  // listener to check answer
-  answer_buttons[i].addEventListener('click', function() {
-    if (this.innerHTML == word_article.innerHTML) {
-      console.log('Acerto mizeravi');
-    } else {
-      console.log('ERRRRRRRRRROU!! É um pais da Europa: '+word_article.innerHTML);
-    }
-    random_word();
-  });
+
+function nextTurn(){
+  generate_random_word();
+  console.log('Você esta num turno novo');
+}
+function endGame(){
+  console.log('Você PERDEEEUUU');
 }

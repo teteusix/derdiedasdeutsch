@@ -16,7 +16,7 @@ header.game-screen h1 span {}
     padding: 50px 0;
     max-width: 100%;
 }
-#word-article {display: none;}
+/*#word-article {display: none;}*/
 #word-singular {
     font-weight: bold;
     font-size: 64px;

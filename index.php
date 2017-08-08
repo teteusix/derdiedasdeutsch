@@ -12,6 +12,7 @@
 	<header class="game-screen">
 		<h1><span>Der</span><span>Die</span><span>Das</span></h1>
 	</header>
+	<button id="play">Jogar</button>
 	<main>
 		<section id="words">
 			<strong id="word-article"></strong>
