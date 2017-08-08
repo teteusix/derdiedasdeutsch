@@ -8,7 +8,7 @@ var words = [], // array to receive word list
 	word_006 = {};
 
 	// CCREATE KEY-VALUE ATTRIBUTES ON EACH OBJECT
-	word_001.article = 'Der';
+	word_001.article = 'der';
 	word_001.singular = 'Beruf';
 	word_001.plural = 'Die Berufe';
 	word_001.information = '';
@@ -16,7 +16,7 @@ var words = [], // array to receive word list
 	word_001.nivel = 'A1';
 	words.push(word_001); // insert object in the array
 
-	word_002.article = 'Die';
+	word_002.article = 'die';
 	word_002.singular = 'Zahl';
 	word_002.plural = 'Die Zahlen';
 	word_002.information = '';
@@ -24,7 +24,7 @@ var words = [], // array to receive word list
 	word_002.nivel = 'A1';
 	words.push(word_002); // insert object in the array
 
-	word_003.article = 'Das';
+	word_003.article = 'das';
 	word_003.singular = 'Haus';
 	word_003.plural = 'Die Häuser';
 	word_003.information = '';

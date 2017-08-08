@@ -12,11 +12,15 @@ var word_article = document.getElementById('word-article'),
  document.getElementById('play').setAttribute('onclick','firstTurn()');
 
 function firstTurn(){
+  document.getElementById('words').style.display = 'block';
+  document.getElementById('answer-buttons').style.display = 'block';
+  // document.getElementById('play').style.display = 'none';
   generate_random_word();
   console.log('Você esta no seu primeiro turno');
 }
 
 function generate_random_word() {
+  document.getElementById('play').style.display = 'none';
   var random_word = words[Math.floor(Math.random()*words.length)], //generate a random word basead in the length of array
   li_wordInfo = document.getElementsByClassName('word-info')[0];
 
@@ -51,8 +55,10 @@ function generate_random_word() {
 
 function nextTurn(){
   generate_random_word();
+  document.getElementById('result').innerHTML = 'Acertou';
   console.log('Você esta num turno novo');
 }
 function endGame(){
+  document.getElementById('result').innerHTML = 'Errou';
   console.log('Você PERDEEEUUU');
 }

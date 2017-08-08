@@ -12,14 +12,15 @@
 	<header class="game-screen">
 		<h1><span>Der</span><span>Die</span><span>Das</span></h1>
 	</header>
-	<button id="play">Jogar</button>
+	<button id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
 	<main>
 		<section id="words">
 			<strong id="word-article"></strong>
 			<h2 id="word-singular"></h2>
+			<h2 id="result"></h2>
 			<ul class="word-datas">
 				<li class="word-info"><span><i class="fa fa-info-circle" aria-hidden="true"></i></span><span id="word-info">Um morador de Wein</span></li>
-				<li class="word-plural"><span>Pl.</span><span id="word-plural">Plural</span></li>
+				<li class="word-plural"><span>Pl.</span><span id="word-plural"></span></li>
 				<li class="word-translate"><span><i class="fa fa-language" aria-hidden="true"></i></span><span id="word-translate"></span></li>
 			</ul>
 		</section>
