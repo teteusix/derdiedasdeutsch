@@ -1,3 +1,18 @@
+*, *:before, *:after {
+  transition: 0.3s all cubic-bezier(0.4, 0, 1, 1); }
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+/*@media only screen and (max-width: 320px) {*/
+
+   body {
+      font-size: 2em;
+   }
+
+/*}*/
+
 .game-screen {
     text-align: center;
     max-width: 100%;
@@ -7,7 +22,7 @@ header.game-screen {}
 header.game-screen h1 {
     margin: 0;
     font-weight: bold;
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 header.game-screen h1 span {}
 
@@ -16,11 +31,12 @@ header.game-screen h1 span {}
     padding: 50px 0;
     max-width: 100%;
 }
-/*#word-article {display: none;}*/
+#word-article {display: none;}
 #word-singular {
     font-weight: bold;
-    font-size: 64px;
+    font-size: 3.5em;
     margin: 5% 0;
+    font-family: "Montserrat", arial, sans-serif;
 }
 
 .word-datas{
@@ -29,8 +45,8 @@ header.game-screen h1 span {}
   padding: 0;
 }
 .word-datas li{
-    padding: 5px 0;
-    font-size: 18px;
+    padding: 0.5em 0;
+    font-size: 1.5em;
 }
 .word-datas li span{}
 .word-datas li span:first-child{
@@ -40,6 +56,8 @@ header.game-screen h1 span {}
 .word-datas li span:last-child{
     font-style: italic;
     color: #444;
+    font-family: "Montserrat", arial, sans-serif;
+    letter-spacing: -0.08em;
 }
 .word-datas li.word-info{}
 .word-datas li.word-plural{}
