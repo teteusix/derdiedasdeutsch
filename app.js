@@ -2,8 +2,8 @@
 var word_article = document.getElementById('word-article'),
   word_singular = document.getElementById('word-singular'),
   word_plural = document.getElementById('word-plural'),
-  word_information = document.getElementById('word-information'),
-  word_translation = document.getElementById('word-translation'),
+  word_information = document.getElementById('word-info'),
+  word_translate = document.getElementById('word-translate'),
   answer_buttons = document.getElementsByClassName('answer-button');
 
 generate_random_word();
@@ -16,7 +16,7 @@ function generate_random_word() {
   word_article.innerHTML = random_word.article;
   word_singular.innerHTML = random_word.singular;
   word_plural.innerHTML = random_word.plural;
-  word_translation.innerHTML = random_word.translation;
+  word_translate.innerHTML = random_word.translate;
   if (random_word.information == '') {
     li_wordInfo.style.display = 'none';
   } else {

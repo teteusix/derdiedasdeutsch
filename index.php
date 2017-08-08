@@ -13,16 +13,18 @@
 	</header>
 	<main>
 		<section id="words">
+			<strong id="word-article"></strong>
 			<h2 id="word-singular"></h2>
 			<ul class="word-datas">
 				<li class="word-info"><span><i class="fa fa-info-circle" aria-hidden="true"></i></span><span id="word-info">Um morador de Wein</span></li>
 				<li class="word-plural"><span>Pl.</span><span id="word-plural">Plural</span></li>
-				<li class="word-translate"><span><i class="fa fa-language" aria-hidden="true"></i></span><span id="word-translate">Weinero</span></li>
+				<li class="word-translate"><span><i class="fa fa-language" aria-hidden="true"></i></span><span id="word-translate"></span></li>
 			</ul>
 		</section>
 	</main>
 	<footer class="game-screen"><nav id="answer-buttons"><button class="answer-button" id="der" value="der">Der</button><button class="answer-button" id="die" value="die">Die</button><button class="answer-button" id="das" value="das">Das</button></nav></footer>
 
+	<script src="wordlist.js"></script>
 	<script src="app.js"></script>
 </body>
 </html>
