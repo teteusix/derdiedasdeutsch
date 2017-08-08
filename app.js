@@ -1,3 +1,7 @@
+// SET INITIAL VALUE
+var score_val = 0;
+document.getElementById('result').innerHTML = score_val;
+
 // take datas of the word
 var word_article = document.getElementById('word-article'),
   word_singular = document.getElementById('word-singular'),
@@ -19,6 +23,9 @@ function firstTurn(){
 }
 
 function generate_random_word() {
+  console.log('Score atual ='+score_val);
+  score_val = score_val+1;
+
   document.getElementById('play').style.display = 'none';
 
   if (words.length == 0) {
@@ -42,9 +49,7 @@ function generate_random_word() {
     word_information.innerHTML = random_word.information;
   }
 
-  console.log('Total usados: '+usedWords.length);
   usedWords.push(random_word);
-  console.log('Total usados: '+usedWords.length);
   // console.log(random_word.article);
 
   if (random_word.article === 'der') {
@@ -61,20 +66,21 @@ function generate_random_word() {
     btn_das.setAttribute('onclick','nextTurn()');
   }
 
-  console.log('Total não usados: '+words.length);
+
   words.splice(random_word,1);
   console.log('Foi tirado: '+random_word.article+' '+random_word.singular);
-  console.log('Total usados: '+usedWords.length);
-  console.log('Total não usados: '+words.length);
+  // console.log('Total não usados: '+words.length);
 }
 
 
 function nextTurn(){
+  document.getElementById('result').innerHTML = score_val;
   generate_random_word();
-  document.getElementById('result').innerHTML = 'Acertou';
+  // document.getElementById('result').innerHTML = 'Acertou';
   console.log('Você esta num turno novo');
+  console.log('Total usados: '+usedWords.length);
 }
 function endGame(){
-  document.getElementById('result').innerHTML = 'Errou';
+  document.getElementById('result').innerHTML = 0;
   console.log('Você PERDEEEUUU');
 }
