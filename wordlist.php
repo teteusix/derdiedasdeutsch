@@ -39,25 +39,22 @@
 				<td class="article">die</td>
 				<td class="word-singular">Banane</td>
 				<td class="plural">Die Bananen</td>
-				<td class="information"></td>
+				<td class="information">Info</td>
 				<td class="translate">A Banana</td>
-				<td class="nivel">A1</td>
 			</tr>
 			<tr class="word">
 				<td class="article">der</td>
 				<td class="word-singular">Wein</td>
 				<td class="plural">Die Weine</td>
-				<td class="information"></td>
+				<td class="information">Info</td>
 				<td class="translate">O Vinho</td>
-				<td class="nivel">A1</td>
 			</tr>
 			<tr class="word">
 				<td class="article">das</td>
 				<td class="word-singular">Glas</td>
 				<td class="plural">Die Gläser</td>
-				<td class="information"></td>
+				<td class="information">Info</td>
 				<td class="translate">O copo</td>
-				<td class="nivel">A1</td>
 			</tr>
 		</tbody>
 	</table>
