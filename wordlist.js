@@ -7,7 +7,7 @@ var words = [], // array to receive word list
 	word_005 = {},
 	word_006 = {};
 
-	// create key-value attributes on each object
+	// CREATE KEY-VALUE ATTRIBUTES ON EACH OBJECT
 	word_001.article = 'Der';
 	word_001.singular = 'Beruf';
 	word_001.plural = 'Die Berufe';
@@ -16,7 +16,6 @@ var words = [], // array to receive word list
 	word_001.nivel = 'A1';
 	words.push(word_001); // insert object in the array
 
-	// create key-value attributes on each object
 	word_002.article = 'Die';
 	word_002.singular = 'Zahl';
 	word_002.plural = 'Die Zahlen';
@@ -25,7 +24,6 @@ var words = [], // array to receive word list
 	word_002.nivel = 'A1';
 	words.push(word_002); // insert object in the array
 
-	// create key-value attributes on each object
 	word_003.article = 'Das';
 	word_003.singular = 'Haus';
 	word_003.plural = 'Die Haeuser';
@@ -34,7 +32,6 @@ var words = [], // array to receive word list
 	word_003.nivel = 'A1';
 	words.push(word_003); // insert object in the array
 
-	// create key-value attributes on each object
 	word_004.article = 'die';
 	word_004.singular = 'Banane';
 	word_004.plural = 'Die Bananen';
@@ -43,7 +40,6 @@ var words = [], // array to receive word list
 	word_004.nivel = 'A1';
 	words.push(word_004); // insert object in the array
 
-	// create key-value attributes on each object
 	word_005.article = 'der';
 	word_005.singular = 'Wein';
 	word_005.plural = 'Die Weine';
@@ -52,7 +48,6 @@ var words = [], // array to receive word list
 	word_005.nivel = 'A1';
 	words.push(word_005); // insert object in the array
 
-	// create key-value attributes on each object
 	word_006.article = 'das';
 	word_006.singular = 'Glas';
 	word_006.plural = 'Die Gläser';
