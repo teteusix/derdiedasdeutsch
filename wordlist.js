@@ -1,4 +1,5 @@
 var words = [], // array to receive word list
+	usedWords = [], // array to receive used words
 	// create objects to store the words
 	word_001 = {},
 	word_002 = {},

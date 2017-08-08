@@ -16,13 +16,20 @@ function firstTurn(){
   document.getElementById('answer-buttons').style.display = 'block';
   // document.getElementById('play').style.display = 'none';
   generate_random_word();
-  console.log('Você esta no seu primeiro turno');
 }
 
 function generate_random_word() {
   document.getElementById('play').style.display = 'none';
+
+  if (words.length == 0) {
+  } else if (words.length == 6) {
+  } else {
+  }
+
   var random_word = words[Math.floor(Math.random()*words.length)], //generate a random word basead in the length of array
   li_wordInfo = document.getElementsByClassName('word-info')[0];
+
+  console.log('Total não usados: '+words.length);
 
   //inser the word and data in html
   word_article.innerHTML = random_word.article;
@@ -35,7 +42,10 @@ function generate_random_word() {
     word_information.innerHTML = random_word.information;
   }
 
-  console.log(random_word.article);
+  console.log('Total usados: '+usedWords.length);
+  usedWords.push(random_word);
+  console.log('Total usados: '+usedWords.length);
+  // console.log(random_word.article);
 
   if (random_word.article === 'der') {
     btn_der.setAttribute('onclick','nextTurn()');
@@ -50,6 +60,12 @@ function generate_random_word() {
     btn_die.setAttribute('onclick','endGame()');
     btn_das.setAttribute('onclick','nextTurn()');
   }
+
+  console.log('Total não usados: '+words.length);
+  words.splice(random_word,1);
+  console.log('Foi tirado: '+random_word.article+' '+random_word.singular);
+  console.log('Total usados: '+usedWords.length);
+  console.log('Total não usados: '+words.length);
 }
 
 
