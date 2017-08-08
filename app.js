@@ -3,7 +3,8 @@ var word_article = document.getElementById('word-article'),
   word_singular = document.getElementById('word-singular'),
   word_plural = document.getElementById('word-plural'),
   word_information = document.getElementById('word-information'),
-  word_translation = document.getElementById('word-translation');
+  word_translation = document.getElementById('word-translation'),
+  answer_buttons = document.getElementsByClassName('answer-button');
 
 generate_random_word();
 
@@ -23,3 +24,14 @@ function generate_random_word() {
   }
 }
 
+for (var i = 0; i < answer_buttons.length; i++) {
+  // listener to check answer
+  answer_buttons[i].addEventListener('click', function() {
+    if (this.innerHTML == word_article.innerHTML) {
+      console.log('Acerto mizeravi');
+    } else {
+      console.log('ERRRRRRRRRROU!! É um pais da Europa: '+word_article.innerHTML);
+    }
+    random_word();
+  });
+}
