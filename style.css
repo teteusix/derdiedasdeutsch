@@ -1,0 +1,55 @@
+.game-screen {
+    text-align: center;
+    max-width: 100%;
+}
+
+header.game-screen {}
+header.game-screen h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+header.game-screen h1 span {}
+
+#words {
+    text-align: center;
+    padding: 50px 0;
+    max-width: 100%;
+}
+#word-article {display: none;}
+#word-singular {
+    font-weight: bold;
+    font-size: 64px;
+    margin: 5% 0;
+}
+
+.word-datas{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.word-datas li{
+    padding: 5px 0;
+    font-size: 18px;
+}
+.word-datas li span{}
+.word-datas li span:first-child{
+    font-weight: bold;
+    margin-right: 5px;
+}
+.word-datas li span:last-child{
+    font-style: italic;
+    color: #444;
+}
+.word-datas li.word-info{}
+.word-datas li.word-plural{}
+.word-datas li.word-translate{}
+
+#answer-buttons {}
+#answer-buttons button {}
+#answer-buttons button:hover {}
+#answer-buttons button#der {}
+#answer-buttons button#die {}
+#answer-buttons button#das {}
+
+footer.game-screen {}

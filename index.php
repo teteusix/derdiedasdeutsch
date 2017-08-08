@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Der Die Das</title>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400,500,600,700|Work+Sans:300,400,700" rel="stylesheet">
 </head>
 <body>

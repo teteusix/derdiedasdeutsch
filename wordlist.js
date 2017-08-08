@@ -26,7 +26,7 @@ var words = [], // array to receive word list
 
 	word_003.article = 'Das';
 	word_003.singular = 'Haus';
-	word_003.plural = 'Die Haeuser';
+	word_003.plural = 'Die Häuser';
 	word_003.information = '';
 	word_003.translate = 'A casa';
 	word_003.nivel = 'A1';
