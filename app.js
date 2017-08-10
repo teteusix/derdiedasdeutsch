@@ -16,15 +16,8 @@ var wordlistJSON = '{ "word" : [' +
 '{ "article":"das" , "singular": "Haus","plural": "Die Häuser"} ]}';
 
 var wordlist = JSON.parse(wordlistJSON);
-// word_singular.innerHTML = wordlist.word[0].singular;
-// word_plural.innerHTML = wordlist.word[0].plural;
-
 
 var usedWords = [];
-
-// console.log(wordlistJSON.length);
-// console.log(wordlist);
-// console.log(wordlist.word.length);
 
 
 // take datas of the word
@@ -39,33 +32,46 @@ var btn_der = document.getElementById('der'),
 	btn_die = document.getElementById('die'),
 	btn_das = document.getElementById('das'),
 	answer_buttons = document.getElementsByClassName('answer-button');
-	// btn_play = document.getElementById('play');
+	btn_play = document.getElementById('play');
 	// btn_play = document.getElementById('play').setAttribute('onclick','firstTurn()');
 
+play.setAttribute('onclick','firstTurn()');
 function generate_random_word () {
-	// console.log(wordlist.word.length);
-	 random_word = Math.floor(Math.random()*wordlist.word.length);
-	 // console.log(random_word);
+	// check first if have word for use
+	if (wordlist.word.length == 0) {
+		endGame();
+	} else {
+		//generate a random number basead in length of the array
+		random_word = Math.floor(Math.random()*wordlist.word.length);
 
-	 word = wordlist.word[random_word];
-	 // console.log(word);
-	 console.log(word);
+		//take a word with the position in var random_word
+		word = wordlist.word[random_word];
+		console.log(word);
+		console.log(wordlist.word.length);
 
-	word_singular.innerHTML = word.singular;
-	word_plural.innerHTML = word.plural;
+		//print the word in html
+		word_singular.innerHTML = word.singular;
+		word_plural.innerHTML = word.plural;
 
-	wordlist.word.splice(random_word,1);
-	changeArray();
-	return word;
+		changeArray();
+		// nextTurn();
+	}
 }
-
 
 function changeArray() {
 	console.log('Muda a palavra de array');
+	// remove the word of the array
+	wordlist.word.splice(random_word,1);
 	usedWords.push(word);
 	console.log(usedWords);
 }
 
+function firstTurn() {
+	play.style.display = 'none';
+	document.getElementById('words').style.display = 'block';
+	document.getElementById('answer-buttons').style.display = 'block';
+	turn();
+}
 function turn() {
 	console.log('Função: Turno');
 	generate_random_word();
@@ -73,14 +79,21 @@ function turn() {
 function checkButtons() {}
 function nextTurn() {
 	console.log('Função: Proximo Turno');
+	turn();
 }
 function endGame() {
 	console.log('Função: Fim do jogo');
+	console.log(wordlist.word.length);
+	if (wordlist.word.length == 0) {
+		console.log('VOCÊ GANHO PORRAAAA!');
+	} else {
+		console.log('PERDEU');
+	}
 }
 
-turn();
-checkButtons();
-nextTurn();
-endGame();
+// turn();
+// checkButtons();
+// nextTurn();
+// endGame();
 
 
