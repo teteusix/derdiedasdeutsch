@@ -19,9 +19,12 @@ var wordlist = JSON.parse(wordlistJSON);
 // word_singular.innerHTML = wordlist.word[0].singular;
 // word_plural.innerHTML = wordlist.word[0].plural;
 
-console.log(wordlistJSON.length);
-console.log(wordlist);
-console.log(wordlist.word.length);
+
+var usedWords = [];
+
+// console.log(wordlistJSON.length);
+// console.log(wordlist);
+// console.log(wordlist.word.length);
 
 
 // take datas of the word
@@ -40,20 +43,32 @@ var btn_der = document.getElementById('der'),
 	// btn_play = document.getElementById('play').setAttribute('onclick','firstTurn()');
 
 function generate_random_word () {
+	// console.log(wordlist.word.length);
 	 random_word = Math.floor(Math.random()*wordlist.word.length);
-	 console.log(random_word);
+	 // console.log(random_word);
 
+	 word = wordlist.word[random_word];
+	 // console.log(word);
+	 console.log(word);
 
-	 return random_word;
+	word_singular.innerHTML = word.singular;
+	word_plural.innerHTML = word.plural;
+
+	wordlist.word.splice(random_word,1);
+	changeArray();
+	return word;
 }
-generate_random_word();
+
 
 function changeArray() {
 	console.log('Muda a palavra de array');
+	usedWords.push(word);
+	console.log(usedWords);
 }
 
 function turn() {
 	console.log('Função: Turno');
+	generate_random_word();
 }
 function checkButtons() {}
 function nextTurn() {
