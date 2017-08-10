@@ -1,22 +1,27 @@
 # Der Die Das
 
-Apresentação
 
+**Next Updates**
 
-## O Jogo
+- Make wordlist.js a json;
+- Change index.php for index.html;
+- Make correct transfer between arrays: from `words = [], // array to receive word list` to `usedWords = [], // array to receive used words`;
+- Make a desktop view version (now have only for mobile);
+- Create a user area;
+- Save results (score) in a datebase;
+- Show the most hard words;
+- Select word categories.
 
-### Objetivo
+## The game
 
-### Como funciona
+### Objective
 
-- Regras
+### How it works
 
-## O projeto
+## Project
 
-### Desenvolvimento
+### Development
 
-## Outras informacões
+## Other infos
 
-- Proxima atualizações
-- Baseado no aplicativo
 
