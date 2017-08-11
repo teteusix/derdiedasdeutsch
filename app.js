@@ -47,7 +47,7 @@ function generate_random_word () {
 		word_singular.innerHTML = word.singular;
 		word_plural.innerHTML = word.plural;
 		word_information.innerHTML = word.information;
-		word_translate.innerHTML = word.translate.pt;
+		word_translate.innerHTML = word.translate.en;
 
 		changeArray();
 		// nextTurn();
@@ -107,7 +107,7 @@ function endGame() {
 	console.log(percentage);
 
 	main.innerHTML = '<section id="result">'+
-		'<h2>Result</h2>'+
+		'<h2>Ergebnis</h2>'+
 		'<ul>'+
 			'<li class="icon">'+icon+'</li>'+
 			'<li class="score-words"><strong class="score-used-word">'+correctWords+'</strong> von <strong class="score-total-word">'+total_word_list+'</strong></li>'+

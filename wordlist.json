@@ -8,7 +8,8 @@
 			"level": "A1",
 			"translate": {
 				"pt": "A profissão",
-				"en": "A profissão"
+				"en": "The profession",
+				"es": "La profesión"
 			}
 		}
 		{
@@ -19,7 +20,8 @@
 			"level": "A1",
 			"translate": {
 				"pt": "O valor",
-				"en": "O valor"
+				"en": "The value",
+				"es": "El valor"
 			}
 		}
 		{
@@ -30,7 +32,8 @@
 			"level": "A1",
 			"translate": {
 				"pt": "A casa",
-				"en": "A casa"
+				"en": "The house",
+				"es": "La casa"
 			}
 		}
 		{
@@ -41,7 +44,8 @@
 			"level": "A1",
 			"translate": {
 				"pt": "A Banana",
-				"en": "A Banana"
+				"en": "The Banana",
+				"es": "El plátano / El banana"
 			}
 		}
 		{
@@ -52,7 +56,8 @@
 			"level": "A1",
 			"translate": {
 				"pt": "O Vinho",
-				"en": "O Vinho"
+				"en": "The Wine",
+				"es": "El vino"
 			}
 		}
 		{
@@ -63,7 +68,8 @@
 			"level": "A1",
 			"translate": {
 				"pt": "O copo",
-				"en": "O copo"
+				"en": "The Glass",
+				"es": "El vaso"
 			}
 		}
 	]
