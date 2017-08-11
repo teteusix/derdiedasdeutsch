@@ -94,6 +94,8 @@ function nextTurn() {
 function endGame() {
 	main = document.querySelectorAll('main')[0];
 	correctWords = (arrUsedWords.length)-1;
+	percentage = (correctWords/total_word_list)*100;
+	console.log(percentage);
 	var icon = '';
 	if (wordlist.word.length == 0) {
 		icon = '<i class="fa fa-smile-o" aria-hidden="true"></i>';
@@ -106,7 +108,7 @@ function endGame() {
 		'<ul>'+
 			'<li class="icon">'+icon+'</li>'+
 			'<li class="score-words"><strong class="score-used-word">'+correctWords+'</strong> von <strong class="score-total-word">'+total_word_list+'</strong></li>'+
-			'<li class="percentage"><i class="fa fa-thumbs-up" aria-hidden="true"></i><strong class="score-percent-word"></strong></li>'+
+			'<li class="percentage"><i class="fa fa-thumbs-up" aria-hidden="true"></i><strong class="score-percent-word">'+Math.floor(percentage)+'%</strong></li>'+
 		'</ul>'+
 	'</section>';
 }
