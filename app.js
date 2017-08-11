@@ -8,12 +8,12 @@ document.getElementById('result').innerHTML = score_val;
 // var wordlistJSON = '';
 
 var wordlistJSON = '{ "word" : [' +
-'{ "article":"der" , "singular": "Beruf","plural": "Die Berufe"},' +
-'{ "article":"die" , "singular": "Zahl","plural": "Die Zahlen"},' +
-'{ "article": "die" , "singular": "Banane","plural": "Die Bananen"},' +
-'{ "article": "der" , "singular": "Wein","plural": "Die Weine"},' +
-'{ "article": "das" , "singular": "Glas","plural": "Die Gläser"},' +
-'{ "article":"das" , "singular": "Haus","plural": "Die Häuser"} ]}';
+'{ "article":"der" , "singular": "Beruf","plural": "Die Berufe","information": "Info","level": "A1","translate": {"pt": "A profissão","en": "A profissão"}},' +
+'{ "article":"die" , "singular": "Zahl","plural": "Die Zahlen","information": "info","level": "A1","translate": {"pt": "O valor","en": "O valor"}},' +
+'{ "article": "die" , "singular": "Banane","plural": "Die Bananen","information": "info","level": "A1","translate": {"pt": "A casa","en": "A casa"}},' +
+'{ "article": "der" , "singular": "Wein","plural": "Die Weine","information": "info","level": "A1","translate": {"pt": "A Banana","en": "A Banana"}},' +
+'{ "article": "das" , "singular": "Glas","plural": "Die Gläser","information": "info","level": "A1","translate": {"pt": "O Vinho","en": "O Vinho"}},' +
+'{ "article":"das" , "singular": "Haus","plural": "Die Häuser","information": "info","level": "A1","translate": {"pt": "O copo","en": "O copo"}} ]}';
 
 var wordlist = JSON.parse(wordlistJSON);
 
