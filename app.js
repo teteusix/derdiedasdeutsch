@@ -4,9 +4,6 @@ document.getElementById('result').innerHTML = score_val;
 
 
 // ****************************************************
-
-// var wordlistJSON = '';
-
 var wordlistJSON = '{ "word" : [' +
 '{ "article":"der" , "singular": "Beruf","plural": "Die Berufe","information": "Info","level": "A1","translate": {"pt": "A profissão","en": "A profissão"}},' +
 '{ "article":"die" , "singular": "Zahl","plural": "Die Zahlen","information": "info","level": "A1","translate": {"pt": "O valor","en": "O valor"}},' +
@@ -17,14 +14,14 @@ var wordlistJSON = '{ "word" : [' +
 
 var wordlist = JSON.parse(wordlistJSON);
 
-var usedWords = [];
+var usedWords = []; // array to receive used words
 
 
 // take datas of the word
 var word_article = document.getElementById('word-article'),
 	word_singular = document.getElementById('word-singular'),
-	word_plural = document.getElementById('word-plural'),
 	word_information = document.getElementById('word-info'),
+	word_plural = document.getElementById('word-plural'),
 	word_translate = document.getElementById('word-translate');
 
 // Buttons
@@ -46,8 +43,6 @@ function generate_random_word () {
 
 		//take a word with the position in var random_word
 		word = wordlist.word[random_word];
-		console.log(word);
-		console.log(wordlist.word.length);
 
 		//print the word in html
 		word_singular.innerHTML = word.singular;
@@ -61,41 +56,42 @@ function generate_random_word () {
 }
 
 function changeArray() {
-	console.log('Muda a palavra de array');
-	// remove the word of the array
+	// remove the word of the main array
 	wordlist.word.splice(random_word,1);
+	// insert word in array for used words
 	usedWords.push(word);
-	console.log(usedWords);
 }
 
 function firstTurn() {
+	//View (style)
 	play.style.display = 'none';
 	document.getElementById('words').style.display = 'block';
 	document.getElementById('answer-buttons').style.display = 'block';
+
 	turn();
 }
+
 function turn() {
-	console.log('Função: Turno');
 	generate_random_word();
 }
-function checkButtons() {}
+
+// CHECK BUTTONS AND ANSWERS
+for (var i = 0; i < answer_buttons.length; i++) {
+	if (i === 3) { break; }
+	var resposta = answer_buttons[i];
+	answer_buttons[i].addEventListener('click', function() {
+		if (this.value == word.article) {
+			nextTurn();
+		} else {
+			endGame();
+		}
+	});
+}
+
 function nextTurn() {
-	console.log('Função: Proximo Turno');
 	turn();
 }
 function endGame() {
-	console.log('Função: Fim do jogo');
-	console.log(wordlist.word.length);
-	if (wordlist.word.length == 0) {
-		console.log('VOCÊ GANHO PORRAAAA!');
-	} else {
-		console.log('PERDEU');
-	}
+	if (wordlist.word.length == 0) {	} else {	}
 }
-
-// turn();
-// checkButtons();
-// nextTurn();
-// endGame();
-
 
