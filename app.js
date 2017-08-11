@@ -52,6 +52,8 @@ function generate_random_word () {
 		//print the word in html
 		word_singular.innerHTML = word.singular;
 		word_plural.innerHTML = word.plural;
+		word_information.innerHTML = word.information;
+		word_translate.innerHTML = word.translate.pt;
 
 		changeArray();
 		// nextTurn();
