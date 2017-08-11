@@ -20,10 +20,11 @@ var word_article = document.getElementById('word-article'),
 	word_plural = document.getElementById('word-plural'),
 	word_translate = document.getElementById('word-translate'),
 	used_word = document.getElementsByClassName('used-word')[0],
-	total_word = document.getElementsByClassName('total-word')[0];
+	total_word = document.getElementsByClassName('total-word')[0],
+	total_word_list = wordlist.word.length;
 
 used_word.innerHTML = score_val;
-total_word.innerHTML = wordlist.word.length;
+total_word.innerHTML = total_word_list;
 
 // Buttons
 var answer_buttons = document.getElementsByClassName('answer-button'),
@@ -91,6 +92,22 @@ function nextTurn() {
 	turn();
 }
 function endGame() {
-	if (wordlist.word.length == 0) {	} else {	}
+	main = document.querySelectorAll('main')[0];
+	correctWords = (arrUsedWords.length)-1;
+	var icon = '';
+	if (wordlist.word.length == 0) {
+		icon = '<i class="fa fa-smile-o" aria-hidden="true"></i>';
+	} else {
+		icon = '<i class="fa fa-frown-o" aria-hidden="true"></i>';
+	}
+
+	main.innerHTML = '<section id="result">'+
+		'<h2>Result</h2>'+
+		'<ul>'+
+			'<li class="icon">'+icon+'</li>'+
+			'<li class="score-words"><strong class="score-used-word">'+correctWords+'</strong> von <strong class="score-total-word">'+total_word_list+'</strong></li>'+
+			'<li class="percentage"><i class="fa fa-thumbs-up" aria-hidden="true"></i><strong class="score-percent-word"></strong></li>'+
+		'</ul>'+
+	'</section>';
 }
 
