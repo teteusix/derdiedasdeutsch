@@ -4,21 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Der Die Das</title>
 	<link rel="stylesheet" href="style.css">
-	<!-- <link rel="stylesheet" href="reset.css"> -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400,500,600,700|Work+Sans:300,400,700" rel="stylesheet">
 </head>
 <body>
-<div id="texto"></div>
 	<header class="game-screen">
 		<h1><span>Der</span><span>Die</span><span>Das</span></h1>
-		<div id="result">
-			<div class="score"></div>
-		</div>
+		<div id="result"></div>
 	</header>
 	<button id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
 	<main>
 		<section id="words">
+			<p class="score"><strong class="used-word"></strong> von <strong class="total-word"></strong> Wörtern</p>
 			<strong id="word-article"></strong>
 			<h2 id="word-singular"></h2>
 			<ul class="word-datas">
@@ -30,7 +27,6 @@
 	</main>
 	<footer class="game-screen"><nav id="answer-buttons"><button class="answer-button" id="der" value="der">der</button><button class="answer-button" id="die" value="die">die</button><button class="answer-button" id="das" value="das">das</button></nav></footer>
 
-	<script src="wordlist.js"></script>
 	<script src="app.js"></script>
 </body>
 </html>

@@ -1,9 +1,3 @@
-// SET INITIAL VALUE
-var score_val = 0;
-document.getElementById('result').innerHTML = score_val;
-
-
-// ****************************************************
 var wordlistJSON = '{ "word" : [' +
 '{ "article":"der" , "singular": "Beruf","plural": "Die Berufe","information": "Info","level": "A1","translate": {"pt": "A profissão","en": "A profissão"}},' +
 '{ "article":"die" , "singular": "Zahl","plural": "Die Zahlen","information": "info","level": "A1","translate": {"pt": "O valor","en": "O valor"}},' +
@@ -13,26 +7,30 @@ var wordlistJSON = '{ "word" : [' +
 '{ "article":"das" , "singular": "Haus","plural": "Die Häuser","information": "info","level": "A1","translate": {"pt": "O copo","en": "O copo"}} ]}';
 
 var wordlist = JSON.parse(wordlistJSON);
+// ****************************************************
 
-var usedWords = []; // array to receive used words
-
+// SET INITIAL VALUE
+var score_val = 0,
+	arrUsedWords = []; // array to receive used words
 
 // take datas of the word
 var word_article = document.getElementById('word-article'),
 	word_singular = document.getElementById('word-singular'),
 	word_information = document.getElementById('word-info'),
 	word_plural = document.getElementById('word-plural'),
-	word_translate = document.getElementById('word-translate');
+	word_translate = document.getElementById('word-translate'),
+	used_word = document.getElementsByClassName('used-word')[0],
+	total_word = document.getElementsByClassName('total-word')[0];
+
+used_word.innerHTML = score_val;
+total_word.innerHTML = wordlist.word.length;
 
 // Buttons
-var btn_der = document.getElementById('der'),
-	btn_die = document.getElementById('die'),
-	btn_das = document.getElementById('das'),
-	answer_buttons = document.getElementsByClassName('answer-button');
+var answer_buttons = document.getElementsByClassName('answer-button'),
 	btn_play = document.getElementById('play');
-	// btn_play = document.getElementById('play').setAttribute('onclick','firstTurn()');
 
 play.setAttribute('onclick','firstTurn()');
+
 function generate_random_word () {
 	// check first if have word for use
 	if (wordlist.word.length == 0) {
@@ -59,7 +57,7 @@ function changeArray() {
 	// remove the word of the main array
 	wordlist.word.splice(random_word,1);
 	// insert word in array for used words
-	usedWords.push(word);
+	arrUsedWords.push(word);
 }
 
 function firstTurn() {
@@ -89,6 +87,7 @@ for (var i = 0; i < answer_buttons.length; i++) {
 }
 
 function nextTurn() {
+	used_word.innerHTML = arrUsedWords.length;
 	turn();
 }
 function endGame() {
