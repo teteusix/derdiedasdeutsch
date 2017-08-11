@@ -1,10 +1,10 @@
 var wordlistJSON = '{ "word" : [' +
 '{ "article":"der" , "singular": "Beruf","plural": "Die Berufe","information": "Info","level": "A1","translate": {"pt": "A profissão","en": "A profissão"}},' +
 '{ "article":"die" , "singular": "Zahl","plural": "Die Zahlen","information": "info","level": "A1","translate": {"pt": "O valor","en": "O valor"}},' +
-'{ "article": "die" , "singular": "Banane","plural": "Die Bananen","information": "info","level": "A1","translate": {"pt": "A casa","en": "A casa"}},' +
-'{ "article": "der" , "singular": "Wein","plural": "Die Weine","information": "info","level": "A1","translate": {"pt": "A Banana","en": "A Banana"}},' +
-'{ "article": "das" , "singular": "Glas","plural": "Die Gläser","information": "info","level": "A1","translate": {"pt": "O Vinho","en": "O Vinho"}},' +
-'{ "article":"das" , "singular": "Haus","plural": "Die Häuser","information": "info","level": "A1","translate": {"pt": "O copo","en": "O copo"}} ]}';
+'{ "article": "die" , "singular": "Banane","plural": "Die Bananen","information": "info","level": "A1","translate": {"pt": "A Banana","en": "A Banana"}},' +
+'{ "article": "der" , "singular": "Wein","plural": "Die Weine","information": "info","level": "A1","translate": {"pt": "O Vinho","en": "O Vinho"}},' +
+'{ "article": "das" , "singular": "Glas","plural": "Die Gläser","information": "info","level": "A1","translate": {"pt": "O Copo","en": "O Copo"}},' +
+'{ "article":"das" , "singular": "Haus","plural": "Die Häuser","information": "info","level": "A1","translate": {"pt": "A casa","en": "A casa"}} ]}';
 
 var wordlist = JSON.parse(wordlistJSON);
 // ****************************************************
@@ -88,20 +88,23 @@ for (var i = 0; i < answer_buttons.length; i++) {
 }
 
 function nextTurn() {
+	console.log(arrUsedWords.length);
 	used_word.innerHTML = arrUsedWords.length;
 	turn();
 }
 function endGame() {
-	main = document.querySelectorAll('main')[0];
-	correctWords = (arrUsedWords.length)-1;
-	percentage = (correctWords/total_word_list)*100;
-	console.log(percentage);
+	var main = document.querySelectorAll('main')[0],
+		correctWords = '';
 	var icon = '';
-	if (wordlist.word.length == 0) {
+	if (arrUsedWords.length == total_word_list) {
+		correctWords = arrUsedWords.length;
 		icon = '<i class="fa fa-smile-o" aria-hidden="true"></i>';
 	} else {
+		correctWords = (arrUsedWords.length)-1;
 		icon = '<i class="fa fa-frown-o" aria-hidden="true"></i>';
 	}
+	percentage = (correctWords/total_word_list)*100;
+	console.log(percentage);
 
 	main.innerHTML = '<section id="result">'+
 		'<h2>Result</h2>'+
