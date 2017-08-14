@@ -116,6 +116,7 @@ function endGame() {
 		'<ul>'+
 			'<li class="score-words">Du hast<br/><strong class="score-used-word">'+correctWords+'</strong> von <strong class="score-total-word">'+total_word_list+'</strong><br/>Worten richtig</li>'+
 			'<li class="percentage"><strong>'+Math.floor(percentage)+'%</strong></li>'+
+			'<li><a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>spielen wieder</span></a></li>'+
 		'</ul>'+
 	'</section>';
 }
