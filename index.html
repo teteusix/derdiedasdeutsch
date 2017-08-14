@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Der Die Das</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400,500,600,700|Work+Sans:300,400,700" rel="stylesheet">
@@ -13,7 +15,7 @@
 	</header>
 	<button id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
 	<main>
-		<section id="words">
+		<section id="words" class="container">
 			<p class="score"><strong class="used-word"></strong> von <strong class="total-word"></strong> Wörtern</p>
 			<strong id="word-article"></strong>
 			<h2 id="word-singular"></h2>
@@ -24,7 +26,7 @@
 			</ul>
 		</section>
 	</main>
-	<footer class="game-screen"><nav id="answer-buttons"><button class="answer-button" id="der" value="der">der</button><button class="answer-button" id="die" value="die">die</button><button class="answer-button" id="das" value="das">das</button></nav></footer>
+	<footer class="game-screen"><nav id="answer-buttons"><button class="answer-button der" id="der" value="der">der</button><button class="answer-button die" id="die" value="die">die</button><button class="answer-button das" id="das" value="das">das</button></nav></footer>
 
 	<script src="app.js"></script>
 </body>
