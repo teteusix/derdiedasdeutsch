@@ -1,10 +1,10 @@
 var wordlistJSON = '{ "word" : [' +
-'{ "article":"der" , "singular": "Beruf","plural": "Die Berufe","information": "Info","level": "A1","translate": {"pt": "A profissão","en": "A profissão"}},' +
-'{ "article":"die" , "singular": "Zahl","plural": "Die Zahlen","information": "info","level": "A1","translate": {"pt": "O valor","en": "O valor"}},' +
-'{ "article": "die" , "singular": "Banane","plural": "Die Bananen","information": "info","level": "A1","translate": {"pt": "A Banana","en": "A Banana"}},' +
-'{ "article": "der" , "singular": "Wein","plural": "Die Weine","information": "info","level": "A1","translate": {"pt": "O Vinho","en": "O Vinho"}},' +
-'{ "article": "das" , "singular": "Glas","plural": "Die Gläser","information": "info","level": "A1","translate": {"pt": "O Copo","en": "O Copo"}},' +
-'{ "article":"das" , "singular": "Haus","plural": "Die Häuser","information": "info","level": "A1","translate": {"pt": "A casa","en": "A casa"}} ]}';
+'{ "article":"der" , "singular": "Beruf","plural": "Die Berufe","information": "","level": "A1","translate": {"pt": "A profissão","en": "A profissão"}},' +
+'{ "article":"die" , "singular": "Zahl","plural": "Die Zahlen","information": "","level": "A1","translate": {"pt": "O valor","en": "O valor"}},' +
+'{ "article": "die" , "singular": "Banane","plural": "Die Bananen","information": "","level": "A1","translate": {"pt": "A Banana","en": "A Banana"}},' +
+'{ "article": "der" , "singular": "Wein","plural": "Die Weine","information": "","level": "A1","translate": {"pt": "O Vinho","en": "O Vinho"}},' +
+'{ "article": "das" , "singular": "Glas","plural": "Die Gläser","information": "","level": "A1","translate": {"pt": "O Copo","en": "O Copo"}},' +
+'{ "article":"das" , "singular": "Haus","plural": "Die Häuser","information": "","level": "A1","translate": {"pt": "A casa","en": "A casa"}} ]}';
 
 var wordlist = JSON.parse(wordlistJSON);
 // ****************************************************
