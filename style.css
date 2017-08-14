@@ -1,3 +1,4 @@
+button {cursor:pointer;}
 header.game-screen {
 	color: #F0F5F9;
 	background-color: #52616B;
@@ -15,7 +16,23 @@ h1 {
 
 header.game-screen h1 span {margin: 0 0.5rem;}
 
-#words {}
+#play {
+	color: #fff;
+	background: #8870FF;
+	position: absolute;
+	left: 50%;
+	width: 10rem;
+	margin-left: -5rem;
+	margin-top: 15rem;
+	height: 10rem;
+	font-size: 5rem;
+	text-align: center;
+	border-radius: 100%;
+	border: medium none;
+	padding-left: 1.3rem;
+}
+
+#words {display: none;}
 #words .score {
 	background: #F0F5F9;
 	color: #1E2022;
@@ -38,13 +55,15 @@ header.game-screen h1 span {margin: 0 0.5rem;}
 	padding-bottom: 1rem;
 	color: #1E2022;
 }
+
 .word-datas {
 	margin: 0;
 	padding: 0;
 	font-size: 1.5rem;
-	color: #C9D6DF;
+	/*color: #C9D6DF;*/
+	color: #52616B;
 }
-.word-datas li {margin-bottom: 1rem;}
+.word-datas li {margin-bottom: 1rem;list-style: none;}
 .word-datas li span {}
 .word-datas li span:first-child {margin-right: 0.5rem;}
 .word-datas li span i {}
@@ -56,8 +75,12 @@ header.game-screen h1 span {margin: 0 0.5rem;}
 	color: #52616B;
 }
 .word-datas .word-info {}
-.word-datas .word-translate {
-    margin-bottom: 0;
+.word-datas .word-translate {margin-bottom: 0;}
+
+@media (min-width: 992px) {
+	#word-singular {padding: 10% 0;}
+	.word-datas .word-plural {margin-bottom: 0.4rem;}
+	.word-datas li {margin-bottom: 0.4rem;}
 }
 
 footer.game-screen {
@@ -66,7 +89,11 @@ footer.game-screen {
 	width: 100%;
 	text-align: center;
 	padding-bottom: 1rem;
+	/*display: none;*/
 }
+
+#answer-buttons {display: none;}
+
 .answer-buttons {}
 
 .der {color: #0084FD;}
@@ -99,3 +126,35 @@ footer.game-screen {
 	background-color: #08B83C;
 }
 .answer-button.das:hover {}
+
+
+#result {
+    background: #292929;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    color: #fff;
+}
+#result h2 {
+    margin: 0;
+    margin-top: 5rem;
+    font-size: 10rem;
+}
+#result ul {
+	margin: 0;
+	padding: 0;
+	margin-top: 2rem;
+}
+#result ul li {list-style: none;font-size: 2rem;}
+#result ul li.score-words {
+    margin-bottom: 2rem;
+}
+#result ul li.score-words strong {}
+#result ul li.score-words .score-used-word {}
+#result ul li.score-words .score-total-word {}
+#result ul li.percentage {
+    font-size: 4rem;
+}
+#result ul li.percentage strong {}

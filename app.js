@@ -46,11 +46,16 @@ function generate_random_word () {
 		//print the word in html
 		word_singular.innerHTML = word.singular;
 		word_plural.innerHTML = word.plural;
-		word_information.innerHTML = word.information;
 		word_translate.innerHTML = word.translate.pt;
 
 		changeArray();
 		// nextTurn();
+	}
+	if (word.information == '') {
+		var batata = document.getElementsByClassName('word-info')[0];
+		batata.style.display = 'none';
+	} else {
+		word_information.innerHTML = word.information;
 	}
 }
 
@@ -109,8 +114,8 @@ function endGame() {
 	main.innerHTML = '<section id="result">'+
 		'<h2>'+icon+'</h2>'+
 		'<ul>'+
-			'<li class="score-words">Du hast <strong class="score-used-word">'+correctWords+'</strong> von <strong class="score-total-word">'+total_word_list+'</strong> Worten richtig</li>'+
-			'<li class="percentage"><i class="fa fa-thumbs-up" aria-hidden="true"></i><strong class="score-percent-word">'+Math.floor(percentage)+'%</strong></li>'+
+			'<li class="score-words">Du hast<br/><strong class="score-used-word">'+correctWords+'</strong> von <strong class="score-total-word">'+total_word_list+'</strong><br/>Worten richtig</li>'+
+			'<li class="percentage"><strong>'+Math.floor(percentage)+'%</strong></li>'+
 		'</ul>'+
 	'</section>';
 }
