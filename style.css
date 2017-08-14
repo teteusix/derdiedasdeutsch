@@ -1,3 +1,29 @@
+header.game-screen {
+	color: #F0F5F9;
+	background-color: #52616B;
+	padding: 0.3rem 0;
+	text-align: center;
+}
+
+h1 {
+	font-size: 1rem;
+	font-weight: bold;
+	font-family: "Montserrat";
+	margin: 0;
+	letter-spacing: 0.1rem;
+}
+
+header.game-screen h1 span {margin: 0 0.5rem;}
+
+footer.game-screen {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+.answer-buttons {}
+
 .der {color: #0084FD;}
 .die {color: #DB1013;}
 .das {color: #08B83C;}
@@ -5,6 +31,12 @@
 .answer-button {
 	border: medium none;
 	font-weight: bolder;
+	width: 7rem;
+	margin: 0 0.5rem;
+	padding: 2rem 0;
+	border-radius: 100%;
+	font-family: "Montserrat";
+	font-size: 2rem;
 }
 .answer-button:hover {}
 .answer-button.der {
