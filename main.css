@@ -28,8 +28,13 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+  /*color: #212529;*/
+  /*color: #F8F2E2;*/
+  /*background-color: #F8F2E2;*/
+  background-color: #34495E;
+  /*background-color: #374047;*/
+  /*color: #374047;*/
+  color: #F8F6F6;
 }
 
 h1, h2, h3, h4, h5, h6 {

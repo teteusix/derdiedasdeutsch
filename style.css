@@ -1,0 +1,24 @@
+.der {color: #0084FD;}
+.die {color: #DB1013;}
+.das {color: #08B83C;}
+
+.answer-button {
+	border: medium none;
+	font-weight: bolder;
+}
+.answer-button:hover {}
+.answer-button.der {
+	color: #fff;
+	background-color: #0084FD;
+}
+.answer-button.der:hover {}
+.answer-button.die {
+	color: #fff;
+	background-color: #DB1013;
+}
+.answer-button.die:hover {}
+.answer-button.das {
+	color: #fff;
+	background-color: #08B83C;
+}
+.answer-button.das:hover {}
