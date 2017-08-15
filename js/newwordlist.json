@@ -5,9 +5,9 @@
 				{
 					"lektion01":[
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Name",
-							"plural": "Namen",
+							"plural": "die Namen",
 							"information": "",
 							"translate": {
 							"pt": "O Nome",
@@ -15,9 +15,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Haus",
-							"plural": "Häuser",
+							"plural": "die Häuser",
 							"information": "",
 							"translate": {
 								"pt": "A Casa",
@@ -25,9 +25,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Familienname",
-							"plural": "Familiennamen",
+							"plural": "die Familiennamen",
 							"information": "",
 							"translate": {
 								"pt": "O sobrenome",
@@ -35,9 +35,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Vorname",
-							"plural": "Vornamen",
+							"plural": "die Vornamen",
 							"information": "",
 							"translate": {
 								"pt": "O primeiro nome",
@@ -45,9 +45,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Land",
-							"plural": "Länder",
+							"plural": "die Länder",
 							"information": "",
 							"translate": {
 								"pt": "O país",
@@ -55,9 +55,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Zahl",
-							"plural": "Zahlen",
+							"plural": "die Zahlen",
 							"information": "",
 							"translate": {
 								"pt": "O número",
@@ -65,9 +65,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Nummer",
-							"plural": "Nummern",
+							"plural": "die Nummern",
 							"information": "",
 							"translate": {
 								"pt": "O número",
@@ -75,9 +75,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Beruf",
-							"plural": "Berufe",
+							"plural": "die Berufe",
 							"information": "",
 							"translate": {
 								"pt": "A profissão",
@@ -89,7 +89,7 @@
 				{
 					"lektion02":[
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Heimat",
 							"plural": "",
 							"information": "",
@@ -99,9 +99,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Nationalität",
-							"plural": "Nationalitäten",
+							"plural": "die Nationalitäten",
 							"information": "",
 							"translate": {
 								"pt": "A nacionalidade",
@@ -109,9 +109,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Sprache",
-							"plural": "Sprachen",
+							"plural": "die Sprachen",
 							"information": "",
 							"translate": {
 								"pt": "O idioma",
@@ -119,9 +119,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Muttersprache",
-							"plural": "Muttersprachen",
+							"plural": "die Muttersprachen",
 							"information": "",
 							"translate": {
 								"pt": "A língua materna",
@@ -129,9 +129,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Arbeit",
-							"plural": "Arbeiten",
+							"plural": "die Arbeiten",
 							"information": "",
 							"translate": {
 								"pt": "O trabalho",
@@ -139,9 +139,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Stift",
-							"plural": "Stifte",
+							"plural": "die Stifte",
 							"information": "",
 							"translate": {
 								"pt": "O lápis",
@@ -149,9 +149,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Kugelschreiber",
-							"plural": "Kugelschreiber",
+							"plural": "die Kugelschreiber",
 							"information": "",
 							"translate": {
 								"pt": "A caneta",
@@ -159,9 +159,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Kuli",
-							"plural": "Kulis",
+							"plural": "die Kulis",
 							"information": "",
 							"translate": {
 								"pt": "A caneta",
@@ -169,9 +169,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Laptop",
-							"plural": "Laptops",
+							"plural": "die Laptops",
 							"information": "",
 							"translate": {
 								"pt": "O laptop",
@@ -179,9 +179,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Tablet",
-							"plural": "Tablets",
+							"plural": "die Tablets",
 							"information": "",
 							"translate": {
 								"pt": "O tablet",
@@ -189,9 +189,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Schlüssel",
-							"plural": "Schlüssel",
+							"plural": "die Schlüssel",
 							"information": "",
 							"translate": {
 								"pt": "A chave",
@@ -199,9 +199,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Tisch",
-							"plural": "Tische",
+							"plural": "die Tische",
 							"information": "",
 							"translate": {
 								"pt": "A mesa",
@@ -209,9 +209,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Stuhl",
-							"plural": "Stühle",
+							"plural": "die Stühle",
 							"information": "",
 							"translate": {
 								"pt": "A cadeira",
@@ -219,9 +219,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Buch",
-							"plural": "Bücher",
+							"plural": "die Bücher",
 							"information": "",
 							"translate": {
 								"pt": "O livro",
@@ -229,9 +229,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Heft",
-							"plural": "Hefte",
+							"plural": "die Hefte",
 							"information": "",
 							"translate": {
 								"pt": "O caderno",
@@ -239,9 +239,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Handy",
-							"plural": "Handys",
+							"plural": "die Handys",
 							"information": "",
 							"translate": {
 								"pt": "O celular",
@@ -249,9 +249,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Fenster",
-							"plural": "Fenster",
+							"plural": "die Fenster",
 							"information": "",
 							"translate": {
 								"pt": "A janela",
@@ -259,9 +259,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Lampe",
-							"plural": "Lampen",
+							"plural": "die Lampen",
 							"information": "",
 							"translate": {
 								"pt": "A lâmpada",
@@ -269,9 +269,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Brille",
-							"plural": "Brillen",
+							"plural": "die Brillen",
 							"information": "",
 							"translate": {
 								"pt": "Os óculos",
@@ -279,9 +279,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Flasche",
-							"plural": "Flaschen",
+							"plural": "die Flaschen",
 							"information": "",
 							"translate": {
 								"pt": "A garrafa",
@@ -289,9 +289,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Tür",
-							"plural": "Türen",
+							"plural": "die Türen",
 							"information": "",
 							"translate": {
 								"pt": "A porta",
@@ -299,9 +299,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Uhr",
-							"plural": "Uhren",
+							"plural": "die Uhren",
 							"information": "",
 							"translate": {
 								"pt": "O relógio",
@@ -309,9 +309,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Tafel",
-							"plural": "Tafeln",
+							"plural": "die Tafeln",
 							"information": "",
 							"translate": {
 								"pt": "O quadro",
@@ -319,9 +319,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Tasche",
-							"plural": "Taschen",
+							"plural": "die Taschen",
 							"information": "",
 							"translate": {
 								"pt": "A bolsa",
@@ -329,9 +329,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Euro",
-							"plural": "Euros",
+							"plural": "die Euros",
 							"information": "",
 							"translate": {
 								"pt": "O euro",
@@ -339,9 +339,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Vorwahl",
-							"plural": "Vorwahlen",
+							"plural": "die Vorwahlen",
 							"information": "",
 							"translate": {
 								"pt": "O DDD",
@@ -349,9 +349,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Telefonnummer",
-							"plural": "Telefonnummern",
+							"plural": "die Telefonnummern",
 							"information": "",
 							"translate": {
 								"pt": "O número de telefone",
@@ -359,9 +359,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Adresse",
-							"plural": "Adressen",
+							"plural": "die Adressen",
 							"information": "",
 							"translate": {
 								"pt": "O endereço",
@@ -369,9 +369,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Straẞe",
-							"plural": "Straẞen",
+							"plural": "die Straẞen",
 							"information": "",
 							"translate": {
 								"pt": "A rua",
@@ -379,9 +379,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Postleitzahl",
-							"plural": "Postleitzahlen",
+							"plural": "die Postleitzahlen",
 							"information": "",
 							"translate": {
 								"pt": "O CEP",
@@ -389,9 +389,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Email-Adresse",
-							"plural": "E-mail-Adressen",
+							"plural": "die E-mail-Adressen",
 							"information": "",
 							"translate": {
 								"pt": "O endereço de E-mail",
@@ -399,9 +399,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Kita",
-							"plural": "Kitas",
+							"plural": "die Kitas",
 							"information": "",
 							"translate": {
 								"pt": "A creche",
@@ -409,9 +409,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Platz",
-							"plural": "Plätze",
+							"plural": "die Plätze",
 							"information": "",
 							"translate": {
 								"pt": "O lugar",
@@ -419,9 +419,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Anmeldeformular",
-							"plural": "Anmeldeformulare",
+							"plural": "die Anmeldeformulare",
 							"information": "",
 							"translate": {
 								"pt": "O formulário de registro",
@@ -433,9 +433,9 @@
 				{
 					"lektion03" :[
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Wohnung",
-							"plural": "Wohnungen",
+							"plural": "die Wohnungen",
 							"information": "",
 							"translate": {
 								"pt": "O apartamento",
@@ -443,9 +443,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Wohnzimmer",
-							"plural": "Wohnzimmer",
+							"plural": "die Wohnzimmer",
 							"information": "",
 							"translate": {
 								"pt": "A sala de estar",
@@ -453,9 +453,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Schlafzimmer",
-							"plural": "Schlafzimmer",
+							"plural": "die Schlafzimmer",
 							"information": "",
 							"translate": {
 								"pt": "O quarto de dormir",
@@ -463,9 +463,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Küche",
-							"plural": "Küchen",
+							"plural": "die Küchen",
 							"information": "",
 							"translate": {
 								"pt": "A cozinha",
@@ -473,7 +473,7 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Möbel",
 							"plural": "",
 							"information": "",
@@ -483,9 +483,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Schrank",
-							"plural": "Schränke",
+							"plural": "die Schränke",
 							"information": "",
 							"translate": {
 								"pt": "O armário",
@@ -493,9 +493,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Sessel",
-							"plural": "Sessel",
+							"plural": "die Sessel",
 							"information": "",
 							"translate": {
 								"pt": "A poltrona",
@@ -503,9 +503,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Sofa",
-							"plural": "Sofas",
+							"plural": "die Sofas",
 							"information": "",
 							"translate": {
 								"pt": "O sofá",
@@ -513,9 +513,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Regal",
-							"plural": "Regale",
+							"plural": "die Regale",
 							"information": "",
 							"translate": {
 								"pt": "A prateleira",
@@ -523,9 +523,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Teppich",
-							"plural": "Teppiche",
+							"plural": "die Teppiche",
 							"information": "",
 							"translate": {
 								"pt": "O tapete",
@@ -533,9 +533,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Bild",
-							"plural": "Bilder",
+							"plural": "die Bilder",
 							"information": "",
 							"translate": {
 								"pt": "O quadro",
@@ -543,9 +543,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Vorhang",
-							"plural": "Vorhänge",
+							"plural": "die Vorhänge",
 							"information": "",
 							"translate": {
 								"pt": "A cortina",
@@ -553,9 +553,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Bett",
-							"plural": "Betten",
+							"plural": "die Betten",
 							"information": "",
 							"translate": {
 								"pt": "A cama",
@@ -563,9 +563,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Fernseher",
-							"plural": "Fernseher",
+							"plural": "die Fernseher",
 							"information": "",
 							"translate": {
 								"pt": "A televisão",
@@ -573,9 +573,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Herd",
-							"plural": "Herde",
+							"plural": "die Herde",
 							"information": "",
 							"translate": {
 								"pt": "O fogão",
@@ -583,9 +583,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Spüle",
-							"plural": "Spülen",
+							"plural": "die Spülen",
 							"information": "",
 							"translate": {
 								"pt": "A pia",
@@ -593,9 +593,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Kühlschrank",
-							"plural": "Kühlschränke",
+							"plural": "die Kühlschränke",
 							"information": "",
 							"translate": {
 								"pt": "A geladeira",
@@ -603,9 +603,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Blume",
-							"plural": "Blumen",
+							"plural": "die Blumen",
 							"information": "",
 							"translate": {
 								"pt": "A flor",
@@ -613,9 +613,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Spülmaschine",
-							"plural": "Spülmaschinen",
+							"plural": "die Spülmaschinen",
 							"information": "",
 							"translate": {
 								"pt": "A máquina de lavar louça",
@@ -623,9 +623,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Mikrowelle",
-							"plural": "Mikrowellen",
+							"plural": "die Mikrowellen",
 							"information": "",
 							"translate": {
 								"pt": "O microondas",
@@ -633,9 +633,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Waschmaschine",
-							"plural": "Waschmaschinen",
+							"plural": "die Waschmaschinen",
 							"information": "",
 							"translate": {
 								"pt": "A máquina de lavar",
@@ -643,9 +643,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Farbe",
-							"plural": "Farben",
+							"plural": "die Farben",
 							"information": "",
 							"translate": {
 								"pt": "A cor",
@@ -653,9 +653,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Erdgeschoss",
-							"plural": "Erdgeschosse",
+							"plural": "die Erdgeschosse",
 							"information": "",
 							"translate": {
 								"pt": "O térreo",
@@ -663,9 +663,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Stock",
-							"plural": "Stockwerke",
+							"plural": "die Stockwerke",
 							"information": "",
 							"translate": {
 								"pt": "O andar",
@@ -673,9 +673,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Dachgeschoss",
-							"plural": "Dachgeschosse",
+							"plural": "die Dachgeschosse",
 							"information": "",
 							"translate": {
 								"pt": "O sótão",
@@ -683,9 +683,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Das",
+							"article": "das",
 							"singular": "Geschäft",
-							"plural": "Geschäfte",
+							"plural": "die Geschäfte",
 							"information": "",
 							"translate": {
 								"pt": "O negócio",
@@ -693,9 +693,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Quadratmeter",
-							"plural": "Quadratmeter",
+							"plural": "die Quadratmeter",
 							"information": "",
 							"translate": {
 								"pt": "O metro quadrado",
@@ -703,9 +703,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Balkon",
-							"plural": "Balkone",
+							"plural": "die Balkone",
 							"information": "",
 							"translate": {
 								"pt": "A sacada",
@@ -713,9 +713,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Der",
+							"article": "der",
 							"singular": "Garten",
-							"plural": "Gärten",
+							"plural": "die Gärten",
 							"information": "",
 							"translate": {
 								"pt": "O jardim",
@@ -723,9 +723,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Zentralheizung",
-							"plural": "Zentralheizungen",
+							"plural": "die Zentralheizungen",
 							"information": "",
 							"translate": {
 								"pt": "O aquecimento central",
@@ -733,9 +733,9 @@
 								"es": ""}
 						},
 						{
-							"article": "Die",
+							"article": "die",
 							"singular": "Miete",
-							"plural": "Mieten",
+							"plural": "die Mieten",
 							"information": "",
 							"translate": {
 								"pt": "O aluguel",
