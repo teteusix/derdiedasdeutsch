@@ -3,11 +3,9 @@ var objLektionLanguageList = {pt:'pt',en:'en'};
 var btns_language = document.getElementsByClassName('btn-language');
 var language = "";
 for (var i = 0; i < btns_language.length; i++) {
-	console.log(this);
 	btns_language[i].addEventListener('click', function() {
 		var myStringLanguage = this.value;
 		language = objLektionLanguageList[myStringLanguage];
-		console.log(language);
 		document.getElementById('muttersprache').remove();
 		document.getElementById('selecttheme').style.display = 'block';
 	});
