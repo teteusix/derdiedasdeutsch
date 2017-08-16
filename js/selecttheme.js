@@ -14,7 +14,7 @@ function fetchJSONFile(path, callback) {
 	httpRequest.send();
 }
 
-fetchJSONFile('js/newwordlist.json', function(data){
+fetchJSONFile('js/wordlist.min.json', function(data){
 	dataJ = data;
 	console.log(dataJ);
 });

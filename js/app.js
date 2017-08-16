@@ -1,3 +1,18 @@
+// BUTTONS TO SELECT LANGUAGE
+var objLektionLanguageList = {pt:'pt',en:'en'};
+var btns_language = document.getElementsByClassName('btn-language');
+var language = "";
+for (var i = 0; i < btns_language.length; i++) {
+	console.log(this);
+	btns_language[i].addEventListener('click', function() {
+		var myStringLanguage = this.value;
+		language = objLektionLanguageList[myStringLanguage];
+		console.log(language);
+		document.getElementById('muttersprache').remove();
+		document.getElementById('selecttheme').style.display = 'block';
+	});
+}
+
 // SET INITIAL VALUE
 var score_val = 0,
 	arrUsedWords = []; // array to receive used words
@@ -35,7 +50,8 @@ function generate_random_word () {
 		//print the word in html
 		word_singular.innerHTML = word.singular;
 		word_plural.innerHTML = word.plural;
-		word_translate.innerHTML = word.translate.pt;
+		// word_translate.innerHTML = word.translate.pt;
+		word_translate.innerHTML = word.translate[language];
 
 		changeArray();
 		// nextTurn();
