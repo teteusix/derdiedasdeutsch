@@ -24,11 +24,13 @@ footer, header, main, nav, section {
 }
 
 body {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.5;
-  color: #212529;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #697175;
+    background: #F0F0F0;
+    font-family: "PT Sans Narrow";
   /*color: #F8F2E2;*/
   /*background-color: #F8F2E2;*/
   /*background-color: #34495E;*/
