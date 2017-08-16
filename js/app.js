@@ -58,7 +58,7 @@ function changeArray() {
 function firstTurn() {
 	wordlist_actual = lektion;
 	total_word_list = lektion.length;
-	used_word.innerHTML = score_val;
+	used_word.innerHTML = 0;
 	total_word.innerHTML = total_word_list;
 	document.getElementById('words').style.display = 'block';
 	document.getElementById('answer-buttons').style.display = 'block';
@@ -89,33 +89,55 @@ function nextTurn() {
 	used_word.innerHTML = arrUsedWords.length;
 	turn();
 }
+
 function endGame() {
 	var main = document.querySelectorAll('main')[0],
 		correctWords = '',
 		icon = '',
-		message = '';
+		message = '',
+		result_word = '';
 	document.getElementById('words').style.display = 'none';
 	document.getElementById('answer-buttons').style.display = 'none';
 	if (arrUsedWords.length == total_word_list) {
 		correctWords = arrUsedWords.length;
 		icon = '<i class="fa fa-smile-o" aria-hidden="true"></i>';
 		message = 'gut gemacht!';
+		message_result_word = '';
 	} else {
 		correctWords = (arrUsedWords.length)-1;
 		icon = '<i class="fa fa-frown-o" aria-hidden="true"></i>';
 		message = 'du verpasst!';
+		result_word = word.article+' '+word.singular;
+		message_result_word = '<p class="erro">Die richtige ist <strong class="'+word.article+'">'+result_word+'</strong></p>';
 	}
 	percentage = (correctWords/total_word_list)*100;
 	console.log(percentage);
 
 	main.innerHTML = main.innerHTML+'<section id="result">'+
-        '<h2><strong>'+icon+'</strong>'+message+'</h2>'+
+        '<h2><strong>'+icon+'</strong>'+message+'</h2>'+message_result_word+
         '<p class="score-result"><strong>'+correctWords+'</strong> von <strong>'+total_word_list+'</strong> Wörtern<span>'+Math.floor(percentage)+'%</span></p>'+
         '<nav class="nav-result">'+
           '<ul>'+
             '<li><a href="index.html" class="result-btn"><i class="fa fa-home" aria-hidden="true"></i><span>Zurück zu starten</span></a></li>'+
-            '<li><button class="result-btn"><i class="fa fa-undo" aria-hidden="true"></i><span>spiele wieder</span></button></li>'+
+            // '<li><button class="result-btn" onclick="playAgain();"><i class="fa fa-undo" aria-hidden="true"></i><span>spiele wieder</span></button></li>'+
           '</ul>'+
         '</nav>'+
     '</section>';
+}
+
+function playAgain() {
+	document.getElementById('result').remove();
+	document.getElementById('words').style.display = 'block';
+	document.getElementById('answer-buttons').style.display = 'block';
+	score_val = 0;
+	used_word.innerHTML = score_val;
+	document.getElementsByClassName('used-word')[0].innerHTML = 0;
+	document.getElementById('word-singular').innerHTML = '';
+	document.getElementById('word-info').innerHTML = '';
+	document.getElementById('word-plural').innerHTML = '';
+	document.getElementById('word-translate').innerHTML = '';
+	lektion = [];
+	lektion = lektionAgain;
+	lektionAgain = JSON.parse(JSON.stringify(lektionAgain));
+	firstTurn();
 }

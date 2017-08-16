@@ -1,22 +1,22 @@
 dataJ = '';
 
 function fetchJSONFile(path, callback) {
-  var httpRequest = new XMLHttpRequest();
-  httpRequest.onreadystatechange = function() {
-    if (httpRequest.readyState === 4) {
-      if (httpRequest.status === 200) {
-        var data = JSON.parse(httpRequest.responseText);
-        if (callback) callback(data);
-      }
-    }
-  };
-  httpRequest.open('GET', path, false);
-  httpRequest.send();
+	var httpRequest = new XMLHttpRequest();
+	httpRequest.onreadystatechange = function() {
+		if (httpRequest.readyState === 4) {
+			if (httpRequest.status === 200) {
+				var data = JSON.parse(httpRequest.responseText);
+				if (callback) callback(data);
+			}
+		}
+	};
+	httpRequest.open('GET', path, false);
+	httpRequest.send();
 }
 
 fetchJSONFile('js/newwordlist.json', function(data){
-  dataJ = data;
-  console.log(dataJ);
+	dataJ = data;
+	console.log(dataJ);
 });
 console.log(dataJ);
 
@@ -27,7 +27,6 @@ var wordlist = dataJ;
 var levels = wordlist.wordlist;
 var a1 = levels[0].a1;
 var a2 = levels[1].a2;
-a1[0].lektion01
 
 var lektion01 = a1[0].lektion01,
 lektion02 = a1[1].lektion02,
@@ -77,7 +76,8 @@ btn_lektion12.innerHTML = 'Im Kaufhaus <strong>'+lektion12.length+' Wörtern';
 btn_lektion13.innerHTML = 'Auf Reisen <strong>'+lektion13.length+' Wörtern';
 btn_lektion14.innerHTML = 'Zusammen leben <strong>'+lektion14.length+' Wörtern';
 
-var lektion;
+var lektion =[];
+var lektionAgain =[];
 
 
 // BUTTONS TO SELECT LEVEL
@@ -87,9 +87,8 @@ for (var i = 0; i < btns_lektions.length; i++) {
 	btns_lektions[i].addEventListener('click', function() {
 		var myString = this.value;
 		lektion = objLektionList[myString];
-		console.log(lektion.length);
-		console.log(myString);
-		console.log(btns_lektions[i]);
+		lektionAgain = JSON.parse(JSON.stringify(objLektionList[myString]));
+		// lektionAgain = objLektionList[myString];
 		firstTurn();
 	});
 }
