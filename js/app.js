@@ -60,7 +60,7 @@ function firstTurn() {
 	total_word_list = lektion.length;
 	used_word.innerHTML = score_val;
 	total_word.innerHTML = total_word_list;
-  document.getElementById('words').style.display = 'block';
+	document.getElementById('words').style.display = 'block';
 	document.getElementById('answer-buttons').style.display = 'block';
 	document.getElementById('selecttheme').style.display = 'none';
 
@@ -91,24 +91,31 @@ function nextTurn() {
 }
 function endGame() {
 	var main = document.querySelectorAll('main')[0],
-		correctWords = '';
-	var icon = '';
+		correctWords = '',
+		icon = '',
+		message = '';
+	document.getElementById('words').style.display = 'none';
+	document.getElementById('answer-buttons').style.display = 'none';
 	if (arrUsedWords.length == total_word_list) {
 		correctWords = arrUsedWords.length;
 		icon = '<i class="fa fa-smile-o" aria-hidden="true"></i>';
+		message = 'gut gemacht!';
 	} else {
 		correctWords = (arrUsedWords.length)-1;
 		icon = '<i class="fa fa-frown-o" aria-hidden="true"></i>';
+		message = 'du verpasst!';
 	}
 	percentage = (correctWords/total_word_list)*100;
 	console.log(percentage);
 
-	main.innerHTML = '<section id="result">'+
-		'<h2>'+icon+'</h2>'+
-		'<ul>'+
-			'<li class="score-words">Du hast<br/><strong class="score-used-word">'+correctWords+'</strong> von <strong class="score-total-word">'+total_word_list+'</strong><br/>Worten richtig</li>'+
-			'<li class="percentage"><strong>'+Math.floor(percentage)+'%</strong></li>'+
-			'<li><a href="#"><i class="fa fa-repeat" aria-hidden="true"></i><span>spielen wieder</span></a></li>'+
-		'</ul>'+
-	'</section>';
+	main.innerHTML = main.innerHTML+'<section id="result">'+
+        '<h2><strong>'+icon+'</strong>'+message+'</h2>'+
+        '<p class="score-result"><strong>'+correctWords+'</strong> von <strong>'+total_word_list+'</strong> Wörtern<span>'+Math.floor(percentage)+'%</span></p>'+
+        '<nav class="nav-result">'+
+          '<ul>'+
+            '<li><a href="index.html" class="result-btn"><i class="fa fa-home" aria-hidden="true"></i><span>Zurück zu starten</span></a></li>'+
+            '<li><button class="result-btn"><i class="fa fa-undo" aria-hidden="true"></i><span>spiele wieder</span></button></li>'+
+          '</ul>'+
+        '</nav>'+
+    '</section>';
 }
