@@ -286,18 +286,18 @@ footer.game-screen {
 }
 #muttersprache ul li button:hover{}
 #muttersprache ul li button span{
-  background: no-repeat url(../flags-v1.gif) center #ccc;
-  width: 40px;
+  /*background: no-repeat url(../flags-v1.gif) center #ccc;*/
+  width: 35px;
   display: inline-block;
-  height: 40px;
-  background-position-x: center;
-  border-radius: 41px;
+  height: 35px;
+  /*background-position-x: center;*/
+  border-radius: 5px;
   vertical-align: middle;
   margin-top: -0.4rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
-#muttersprache ul li button.pt span{background-position-y: -800px;}
-#muttersprache ul li button.en span{background-position-y: 0px;}
+/*#muttersprache ul li button.pt span{background-position-y: -800px;}*/
+/*#muttersprache ul li button.en span{background-position-y: 0px;}*/
 #muttersprache p {
     color: #18181C;
     font-size: 1.7rem;
@@ -318,3 +318,14 @@ footer.game-screen {
     width: 96%;
 }
 #muttersprache p a i{}
+
+
+.flag {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.flag-en {background-image: url(../flags/1x1/gb.svg);}
+.flag-pt {background-image: url(../flags/1x1/br.svg);}
+.flag-rs {background-image: url(../flags/1x1/rs.svg);}

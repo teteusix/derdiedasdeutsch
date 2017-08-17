@@ -1,5 +1,5 @@
 // BUTTONS TO SELECT LANGUAGE
-var objLektionLanguageList = {pt:'pt',en:'en'};
+var objLektionLanguageList = {pt:'pt',en:'en',rs:'rs',es:'es'};
 var btns_language = document.getElementsByClassName('btn-language');
 var language = "";
 for (var i = 0; i < btns_language.length; i++) {

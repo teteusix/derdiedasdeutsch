@@ -10,9 +10,11 @@
 							"plural": "die Namen",
 							"information": "",
 							"translate": {
-							"pt": "O Nome",
+								"pt": "O Nome",
 								"en": "The name",
-								"es": ""}
+								"rs": "Ime( ime i prezime)",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -22,7 +24,9 @@
 							"translate": {
 								"pt": "A Casa",
 								"en": "The Haus",
-								"es": ""}
+								"rs": "Kuća",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -32,7 +36,9 @@
 							"translate": {
 								"pt": "O sobrenome",
 								"en": "The Family Name",
-								"es": ""}
+								"rs": "Prezime",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -42,7 +48,9 @@
 							"translate": {
 								"pt": "O primeiro nome",
 								"en": "The first name",
-								"es": ""}
+								"rs": "Ime",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -52,7 +60,9 @@
 							"translate": {
 								"pt": "O país",
 								"en": "The country",
-								"es": ""}
+								"rs": "Drzava",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -62,7 +72,9 @@
 							"translate": {
 								"pt": "O número",
 								"en": "The number",
-								"es": ""}
+								"rs": "Cifra",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -72,7 +84,9 @@
 							"translate": {
 								"pt": "O número",
 								"en": "The number",
-								"es": ""}
+								"rs": "Broj",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -82,7 +96,9 @@
 							"translate": {
 								"pt": "A profissão",
 								"en": "The Profession",
-								"es": ""}
+								"rs": "Zanimanje",
+								"es": ""
+							}
 						}
 					]
 				},
@@ -96,7 +112,9 @@
 							"translate": {
 								"pt": "A pátria",
 								"en": "The homeland",
-								"es": ""}
+								"rs": "Domovina",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -106,7 +124,9 @@
 							"translate": {
 								"pt": "A nacionalidade",
 								"en": "The nationality",
-								"es": ""}
+								"rs": "Nacionalnost",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -116,7 +136,9 @@
 							"translate": {
 								"pt": "O idioma",
 								"en": "The language",
-								"es": ""}
+								"rs": "Jezik",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -126,7 +148,9 @@
 							"translate": {
 								"pt": "A língua materna",
 								"en": "The mother tongue",
-								"es": ""}
+								"rs": "Maternji jezik",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -136,7 +160,9 @@
 							"translate": {
 								"pt": "O trabalho",
 								"en": "The work",
-								"es": ""}
+								"rs": "Posao",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -146,7 +172,9 @@
 							"translate": {
 								"pt": "O lápis",
 								"en": "The pencil",
-								"es": ""}
+								"rs": "Olovka",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -156,7 +184,9 @@
 							"translate": {
 								"pt": "A caneta",
 								"en": "The pen",
-								"es": ""}
+								"rs": "Hemijska olovka",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -166,7 +196,9 @@
 							"translate": {
 								"pt": "A caneta",
 								"en": "The pen",
-								"es": ""}
+								"rs": "Hemijska (olovkažargon)",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -176,7 +208,9 @@
 							"translate": {
 								"pt": "O laptop",
 								"en": "The laptop",
-								"es": ""}
+								"rs": "Laptop",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -186,7 +220,9 @@
 							"translate": {
 								"pt": "O tablet",
 								"en": "The tablet",
-								"es": ""}
+								"rs": "Tablet",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -196,7 +232,9 @@
 							"translate": {
 								"pt": "A chave",
 								"en": "The key",
-								"es": ""}
+								"rs": "Ključ",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -206,7 +244,9 @@
 							"translate": {
 								"pt": "A mesa",
 								"en": "The table",
-								"es": ""}
+								"rs": "Sto",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -216,7 +256,9 @@
 							"translate": {
 								"pt": "A cadeira",
 								"en": "The chair",
-								"es": ""}
+								"rs": "Stolica",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -226,7 +268,9 @@
 							"translate": {
 								"pt": "O livro",
 								"en": "The book",
-								"es": ""}
+								"rs": "Knjiga",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -236,7 +280,9 @@
 							"translate": {
 								"pt": "O caderno",
 								"en": "The haft",
-								"es": ""}
+								"rs": "Sveska",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -246,7 +292,9 @@
 							"translate": {
 								"pt": "O celular",
 								"en": "The cellphone",
-								"es": ""}
+								"rs": "Mobilni telefon",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -256,7 +304,9 @@
 							"translate": {
 								"pt": "A janela",
 								"en": "The window",
-								"es": ""}
+								"rs": "Prozor",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -266,7 +316,9 @@
 							"translate": {
 								"pt": "A lâmpada",
 								"en": "The lamp",
-								"es": ""}
+								"rs": "Lampa",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -276,7 +328,9 @@
 							"translate": {
 								"pt": "Os óculos",
 								"en": "The glasses",
-								"es": ""}
+								"rs": "Naočare",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -286,7 +340,9 @@
 							"translate": {
 								"pt": "A garrafa",
 								"en": "The bottle",
-								"es": ""}
+								"rs": "Flaša",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -296,7 +352,9 @@
 							"translate": {
 								"pt": "A porta",
 								"en": "The door",
-								"es": ""}
+								"rs": "Vrata",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -306,7 +364,9 @@
 							"translate": {
 								"pt": "O relógio",
 								"en": "The clock",
-								"es": ""}
+								"rs": "Sat (časovnik)",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -316,7 +376,9 @@
 							"translate": {
 								"pt": "O quadro",
 								"en": "The board",
-								"es": ""}
+								"rs": "Tabla",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -326,7 +388,9 @@
 							"translate": {
 								"pt": "A bolsa",
 								"en": "The bag",
-								"es": ""}
+								"rs": "Tašna",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -336,7 +400,9 @@
 							"translate": {
 								"pt": "O euro",
 								"en": "The euro",
-								"es": ""}
+								"rs": "Euro",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -346,7 +412,9 @@
 							"translate": {
 								"pt": "O DDD",
 								"en": "The area code",
-								"es": ""}
+								"rs": "Pozivni broj",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -356,7 +424,9 @@
 							"translate": {
 								"pt": "O número de telefone",
 								"en": "The telephone number",
-								"es": ""}
+								"rs": "Telefonski broj(fiksni)",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -366,7 +436,9 @@
 							"translate": {
 								"pt": "O endereço",
 								"en": "The address",
-								"es": ""}
+								"rs": "Adresa",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -376,7 +448,9 @@
 							"translate": {
 								"pt": "A rua",
 								"en": "The street",
-								"es": ""}
+								"rs": "Ulica",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -386,7 +460,9 @@
 							"translate": {
 								"pt": "O CEP",
 								"en": "The zip code",
-								"es": ""}
+								"rs": "Poštanski broj",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -396,7 +472,9 @@
 							"translate": {
 								"pt": "O endereço de E-mail",
 								"en": "The e-mail address",
-								"es": ""}
+								"rs": "E-Mail adresa",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -406,7 +484,9 @@
 							"translate": {
 								"pt": "A creche",
 								"en": "The daycare center",
-								"es": ""}
+								"rs": "Jaslice (za decu do 3. godine starosti)",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -416,7 +496,9 @@
 							"translate": {
 								"pt": "O lugar",
 								"en": "The place",
-								"es": ""}
+								"rs": "Mesto",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -426,7 +508,9 @@
 							"translate": {
 								"pt": "O formulário de registro",
 								"en": "The registration formular",
-								"es": ""}
+								"rs": "Formular za prijavu",
+								"es": ""
+							}
 						}
 					]
 				},
@@ -440,7 +524,9 @@
 							"translate": {
 								"pt": "O apartamento",
 								"en": "The apartment",
-								"es": ""}
+								"rs": "Stan",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -450,7 +536,9 @@
 							"translate": {
 								"pt": "A sala de estar",
 								"en": "The living room",
-								"es": ""}
+								"rs": "Dnevna soba",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -460,7 +548,9 @@
 							"translate": {
 								"pt": "O quarto de dormir",
 								"en": "The bedroom",
-								"es": ""}
+								"rs": "Spavaća soba",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -470,7 +560,9 @@
 							"translate": {
 								"pt": "A cozinha",
 								"en": "The kitchen",
-								"es": ""}
+								"rs": "Kuhinja",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -480,7 +572,9 @@
 							"translate": {
 								"pt": "A mobília",
 								"en": "The forniture",
-								"es": ""}
+								"rs": "Nameštaj",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -490,7 +584,9 @@
 							"translate": {
 								"pt": "O armário",
 								"en": "The cupboard",
-								"es": ""}
+								"rs": "Ormar",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -500,7 +596,9 @@
 							"translate": {
 								"pt": "A poltrona",
 								"en": "The armchair",
-								"es": ""}
+								"rs": "Stolica",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -510,7 +608,9 @@
 							"translate": {
 								"pt": "O sofá",
 								"en": "The couch",
-								"es": ""}
+								"rs": "Sofa",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -520,7 +620,9 @@
 							"translate": {
 								"pt": "A prateleira",
 								"en": "The shelf",
-								"es": ""}
+								"rs": "Polica",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -530,7 +632,9 @@
 							"translate": {
 								"pt": "O tapete",
 								"en": "The carpet",
-								"es": ""}
+								"rs": "Tepih",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -540,7 +644,9 @@
 							"translate": {
 								"pt": "O quadro",
 								"en": "The frame",
-								"es": ""}
+								"rs": "Slika",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -550,7 +656,9 @@
 							"translate": {
 								"pt": "A cortina",
 								"en": "The curtain",
-								"es": ""}
+								"rs": "Zavesa",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -560,7 +668,9 @@
 							"translate": {
 								"pt": "A cama",
 								"en": "The bed",
-								"es": ""}
+								"rs": "Krevet",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -570,7 +680,9 @@
 							"translate": {
 								"pt": "A televisão",
 								"en": "The TV",
-								"es": ""}
+								"rs": "Televizor (TV)",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -580,7 +692,9 @@
 							"translate": {
 								"pt": "O fogão",
 								"en": "The stove",
-								"es": ""}
+								"rs": "Šporet",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -590,7 +704,9 @@
 							"translate": {
 								"pt": "A pia",
 								"en": "The sink",
-								"es": ""}
+								"rs": "Sudovi",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -600,7 +716,9 @@
 							"translate": {
 								"pt": "A geladeira",
 								"en": "The fridge",
-								"es": ""}
+								"rs": "Frižider",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -610,7 +728,9 @@
 							"translate": {
 								"pt": "A flor",
 								"en": "The flower",
-								"es": ""}
+								"rs": "Cvet",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -620,7 +740,9 @@
 							"translate": {
 								"pt": "A máquina de lavar louça",
 								"en": "The dishwasher",
-								"es": ""}
+								"rs": "Mašina za pranje sudova",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -630,7 +752,9 @@
 							"translate": {
 								"pt": "O microondas",
 								"en": "The microwave",
-								"es": ""}
+								"rs": "Mikrotalasna",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -640,7 +764,9 @@
 							"translate": {
 								"pt": "A máquina de lavar",
 								"en": "The Washing machine",
-								"es": ""}
+								"rs": "Veš mašina",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -650,7 +776,9 @@
 							"translate": {
 								"pt": "A cor",
 								"en": "The color",
-								"es": ""}
+								"rs": "Boja",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -660,7 +788,9 @@
 							"translate": {
 								"pt": "O térreo",
 								"en": "The ground floor",
-								"es": ""}
+								"rs": "Prizemlje",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -670,7 +800,9 @@
 							"translate": {
 								"pt": "O andar",
 								"en": "The floor",
-								"es": ""}
+								"rs": "Sprat",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -680,7 +812,9 @@
 							"translate": {
 								"pt": "O sótão",
 								"en": "The loft",
-								"es": ""}
+								"rs": "Potkrovlje",
+								"es": ""
+							}
 						},
 						{
 							"article": "das",
@@ -690,7 +824,9 @@
 							"translate": {
 								"pt": "O negócio",
 								"en": "The biz",
-								"es": ""}
+								"rs": "Radnja",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -700,7 +836,9 @@
 							"translate": {
 								"pt": "O metro quadrado",
 								"en": "The square metre",
-								"es": ""}
+								"rs": "Kvadratni metar",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -710,7 +848,9 @@
 							"translate": {
 								"pt": "A sacada",
 								"en": "The balcony",
-								"es": ""}
+								"rs": "Balkon",
+								"es": ""
+							}
 						},
 						{
 							"article": "der",
@@ -720,7 +860,9 @@
 							"translate": {
 								"pt": "O jardim",
 								"en": "The garden",
-								"es": ""}
+								"rs": "Bašta",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -730,7 +872,9 @@
 							"translate": {
 								"pt": "O aquecimento central",
 								"en": "The central heating",
-								"es": ""}
+								"rs": "Centralno grejanje",
+								"es": ""
+							}
 						},
 						{
 							"article": "die",
@@ -740,7 +884,9 @@
 							"translate": {
 								"pt": "O aluguel",
 								"en": "The rent",
-								"es": ""}
+								"rs": "Kirija",
+								"es": ""
+							}
 						}
 					]
 				},
