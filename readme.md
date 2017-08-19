@@ -1,4 +1,4 @@
-# Der Die Das Deutsch
+# Der Die Das Deutsch :de:
 
 **Autor**: Matheus Ramos
 
@@ -21,18 +21,18 @@ A cada palavra você tem a opção de selecionar Der, Die ou Das como o artigo d
 - **[Próximas atualizações](doc_pt.md#pr%C3%B3ximas-atualiza%C3%A7%C3%B5es)**
 
 **Idiomas disponiveis**
-> Inglês, Português e Servio,
+> Inglês, Português e Servio
 
 ## Próximas atualizações
 
 Segue as próximas atualizações do projeto que também podem ser conferidas com mais detalhes nas issues.
 
-- Versão Desktop;
-- Seleção de dificuldade;
-- Cadastrar idiomas;
-- Cadastrar palavras;
-- Cadastrar traduções;
-- Selecionar caso (Nominativo, Genitivo, Acusativo, Dativo);
-- Cadastrar usuários;
-- Jogar palavras com mais dificuldades/ que mais erra;
-- Desenvolver como um Mobile App.
+- [ ] Versão Desktop;
+- [X] Seleção de dificuldade;
+- [ ] Cadastrar idiomas;
+- [ ] Cadastrar palavras;
+- [ ] Cadastrar traduções;
+- [ ] Selecionar caso (Nominativo, Genitivo, Acusativo, Dativo);
+- [ ] Cadastrar usuários;
+- [ ] Jogar palavras com mais dificuldades/ que mais erra;
+- [ ] Desenvolver como um Mobile App.

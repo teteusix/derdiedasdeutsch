@@ -1,4 +1,4 @@
-# Der Die Das Deutsch
+# Der Die Das Deutsch :de:
 
 **Autor**: Matheus Ramos
 
@@ -161,12 +161,12 @@ A opção de jogar com as palavras mais difíceis vai buscar quais as palavras q
 
 Segue as próximas atualizações do projeto que também podem ser conferidas com mais detalhes nas issues.
 
-- Versão Desktop;
-- Seleção de dificuldade;
-- Cadastrar idiomas;
-- Cadastrar palavras;
-- Cadastrar traduções;
-- Selecionar caso (Nominativo, Genitivo, Acusativo, Dativo);
-- Cadastrar usuários;
-- Jogar palavras com mais dificuldades/ que mais erra;
-- Desenvolver como um Mobile App.
+- [ ] Versão Desktop;
+- [X] Seleção de dificuldade;
+- [ ] Cadastrar idiomas;
+- [ ] Cadastrar palavras;
+- [ ] Cadastrar traduções;
+- [ ] Selecionar caso (Nominativo, Genitivo, Acusativo, Dativo);
+- [ ] Cadastrar usuários;
+- [ ] Jogar palavras com mais dificuldades/ que mais erra;
+- [ ] Desenvolver como um Mobile App.
