@@ -69,6 +69,9 @@ header.game-screen {
 		width: 70%;
 		text-shadow: 1px 1px 0 $color_Purple_dark;
 		padding: 0.15rem 0.5rem;
+		a {
+			width: 100%;
+		}
 	}
 	a {
 		text-align: center;
@@ -86,7 +89,25 @@ header.game-screen {
 	}
 }
 
+
+#selectdifficulty {
+	@extend .navlist;
+	margin-top: 3%;
+	ul {li {button{
+	padding: 5%;
+	font-size: 2rem;
+	strong {
+		float: right;
+		font-size: 2rem;
+		color: $color_Gray_light;
+		vertical-align: middle;
+	}
+	&:disabled {strong {color: $color_Gray_dark;}}
+	}}}
+}
+
 #muttersprache {
+	@extend .start-inactive;
 	@extend .navlist;
 	text-align: center;
 	ul {li {button{
@@ -162,6 +183,9 @@ header.game-screen {
 		padding-bottom: 2rem;
 		color: $color_Black;
 	}
+	#word-singular.der{color:$der_color;}
+	#word-singular.die{color:$die_color;}
+	#word-singular.das{color:$das_color;}
 	.word-datas {
 		@extend .ulreset;
 		font-size: 1.5rem;

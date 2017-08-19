@@ -2,24 +2,24 @@
 button {
   cursor: pointer; }
 
-.title-h2, .navlist h2, #muttersprache h2, #selecttheme h2, #result h2 {
+.title-h2, .navlist h2, #selectdifficulty h2, #muttersprache h2, #selecttheme h2, #result h2 {
   color: #18181C;
   margin: 0;
   padding: 1rem 0; }
-  .title-h2 strong, .navlist h2 strong, #muttersprache h2 strong, #selecttheme h2 strong, #result h2 strong {
+  .title-h2 strong, .navlist h2 strong, #selectdifficulty h2 strong, #muttersprache h2 strong, #selecttheme h2 strong, #result h2 strong {
     color: #697175; }
 
-.content-align, .navlist, #muttersprache, #selecttheme, #result {
+.content-align, .navlist, #selectdifficulty, #muttersprache, #selecttheme, #result {
   width: 96%;
   margin: 0 auto; }
 
-.ulreset, .navlist ul, #muttersprache ul, #selecttheme ul, #words .word-datas, #result .nav-result ul {
+.ulreset, .navlist ul, #selectdifficulty ul, #muttersprache ul, #selecttheme ul, #words .word-datas, #result .nav-result ul {
   margin: 0;
   padding: 0; }
-  .ulreset li, .navlist ul li, #muttersprache ul li, #selecttheme ul li, #words .word-datas li, #result .nav-result ul li {
+  .ulreset li, .navlist ul li, #selectdifficulty ul li, #muttersprache ul li, #selecttheme ul li, #words .word-datas li, #result .nav-result ul li {
     list-style: none; }
 
-.btn-navlist, .navlist ul li button, #muttersprache ul li button, #selecttheme ul li button, #result .nav-result ul li .result-btn {
+.btn-navlist, .navlist ul li button, #selectdifficulty ul li button, #muttersprache ul li button, #selecttheme ul li button, #result .nav-result ul li .result-btn {
   background: #FFF;
   border: medium none;
   display: block;
@@ -30,13 +30,13 @@ button {
   box-shadow: 0px 1px 0px rgba(100, 100, 100, 0.5);
   color: #697175;
   vertical-align: middle; }
-  .btn-navlist:disabled, .navlist ul li button:disabled, #muttersprache ul li button:disabled, #selecttheme ul li button:disabled, #result .nav-result ul li .result-btn:disabled {
+  .btn-navlist:disabled, .navlist ul li button:disabled, #selectdifficulty ul li button:disabled, #muttersprache ul li button:disabled, #selecttheme ul li button:disabled, #result .nav-result ul li .result-btn:disabled {
     opacity: 0.5; }
 
-.navlist ul li, #muttersprache ul li, #selecttheme ul li {
+.navlist ul li, #selectdifficulty ul li, #muttersprache ul li, #selecttheme ul li {
   margin-bottom: 0.5rem; }
 
-.start-inactive, #selecttheme, #words, #answer-buttons {
+.start-inactive, #muttersprache, #selecttheme, #words, #answer-buttons {
   display: none; }
 
 header.game-screen {
@@ -56,6 +56,8 @@ header.game-screen {
     width: 70%;
     text-shadow: 1px 1px 0 #50427f;
     padding: 0.15rem 0.5rem; }
+    header.game-screen h1 a {
+      width: 100%; }
   header.game-screen a {
     text-align: center;
     display: inline-block;
@@ -69,6 +71,19 @@ header.game-screen {
     line-height: 1;
     text-transform: uppercase;
     padding: 0.32rem 0; }
+
+#selectdifficulty {
+  margin-top: 3%; }
+  #selectdifficulty ul li button {
+    padding: 5%;
+    font-size: 2rem; }
+    #selectdifficulty ul li button strong {
+      float: right;
+      font-size: 2rem;
+      color: #C5C7D7;
+      vertical-align: middle; }
+    #selectdifficulty ul li button:disabled strong {
+      color: #697175; }
 
 #muttersprache {
   text-align: center; }
@@ -135,6 +150,12 @@ header.game-screen {
   padding: 20% 0;
   padding-bottom: 2rem;
   color: #18181C; }
+#words #word-singular.der {
+  color: #0084FD; }
+#words #word-singular.die {
+  color: #DB1013; }
+#words #word-singular.das {
+  color: #08B83C; }
 #words .word-datas {
   font-size: 1.5rem;
   color: #697175; }

@@ -1,3 +1,19 @@
+// BUTTONS TO SELECT DIFFICULTY
+var objLektionDifficulty = {easy:'easy',hard:'hard'};
+var btns_difficulty = document.getElementsByClassName('btn-difficulty');
+var difficulty = "";
+for (var i = 0; i < btns_difficulty.length; i++) {
+		console.log(this);
+	btns_difficulty[i].addEventListener('click', function() {
+		console.log(this);
+		var myStringDifficulty = this.value;
+		difficulty = objLektionDifficulty[myStringDifficulty];
+		console.log(difficulty);
+		document.getElementById('selectdifficulty').remove();
+		document.getElementById('muttersprache').style.display = 'block';
+	});
+}
+
 // BUTTONS TO SELECT LANGUAGE
 var objLektionLanguageList = {pt:'pt',en:'en',rs:'rs',es:'es'};
 var btns_language = document.getElementsByClassName('btn-language');
@@ -33,6 +49,8 @@ var answer_buttons = document.getElementsByClassName('answer-button');
 
 // GERATE A RANDOM WORD BASEAD IN LEKTION/THEME SELECTED
 function generate_random_word () {
+
+
 	// check first if have word for use
 	if (wordlist_actual.length == 0) {
 		endGame();
@@ -46,6 +64,8 @@ function generate_random_word () {
 		console.log(word.article+' '+word.singular);
 
 		//print the word in html
+		// word_singular.setAttribute("class", ""+word.article+"");
+		// word_singular.setAttribute("class", ""+class_difficulty+"");
 		word_singular.innerHTML = word.singular;
 		word_plural.innerHTML = word.plural;
 		// word_translate.innerHTML = word.translate.pt;
@@ -54,6 +74,11 @@ function generate_random_word () {
 		changeArray();
 		// nextTurn();
 	}
+
+	if (difficulty == 'easy') {
+		word_singular.setAttribute("class", ""+word.article+"");
+	}
+
 	if (word.information == '') {
 		var li_word_info = document.getElementsByClassName('word-info')[0];
 		li_word_info.style.display = 'none';

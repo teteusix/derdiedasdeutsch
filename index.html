@@ -11,8 +11,16 @@
 </head>
 <body>
 	<header class="game-screen">
-		<h1>Der Die Das</h1><a href="https://github.com/teteusix/derdiedasdeutsch/blob/master/readme.md" title="über das in GitHub">über</a>
+		<h1><a href="index.html">Der Die Das</a></h1><a href="https://github.com/teteusix/derdiedasdeutsch/blob/master/readme.md" title="über das in GitHub"><i class="fa fa-github" aria-hidden="true"></i> über</a>
 	</header>
+
+	<nav id="selectdifficulty">
+		<ul>
+			<li><button class="btn-difficulty" value="easy">Einfach<strong>+</strong></button></li>
+			<li><button class="btn-difficulty" value="hard">Schwer<strong>++</strong></button></li>
+		</ul>
+	</nav>
+
 	<nav id="muttersprache">
 		<h2>Was ist deine Muttersprache?</h2>
 		<ul>
@@ -23,6 +31,7 @@
 		</ul>
 		<p>Gibt es nicht deine Muttersprache?<a href="https://goo.gl/forms/1gPnTE66XLFeGQMy2">beitragen <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></p>
 	</nav>
+
 	<nav id="selecttheme">
 		<h2><strong>A1</strong>Themen zu spielen</h2>
 		<ul>
@@ -42,6 +51,7 @@
 			<li><button class="btn-lektion" id="lektion14" value="lektion14" disabled></button></li>
 		</ul>
 	</nav>
+
 	<main>
 		<section id="words" class="container">
 			<p class="score"><strong class="used-word"></strong> von <strong class="total-word"></strong> Wörtern</p>
@@ -53,6 +63,7 @@
 			</ul>
 		</section>
 	</main>
+
 	<footer class="game-screen"><nav id="answer-buttons"><button class="answer-button der" id="der" value="der">der</button><button class="answer-button die" id="die" value="die">die</button><button class="answer-button das" id="das" value="das">das</button></nav></footer>
 	<script src="js/selecttheme.js"></script>
 	<script src="js/app.js"></script>
