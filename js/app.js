@@ -3,12 +3,9 @@ var objLektionDifficulty = {easy:'easy',hard:'hard'};
 var btns_difficulty = document.getElementsByClassName('btn-difficulty');
 var difficulty = "";
 for (var i = 0; i < btns_difficulty.length; i++) {
-		console.log(this);
 	btns_difficulty[i].addEventListener('click', function() {
-		console.log(this);
 		var myStringDifficulty = this.value;
 		difficulty = objLektionDifficulty[myStringDifficulty];
-		console.log(difficulty);
 		document.getElementById('selectdifficulty').remove();
 		document.getElementById('muttersprache').style.display = 'block';
 	});
@@ -29,7 +26,10 @@ for (var i = 0; i < btns_language.length; i++) {
 
 // SET INITIAL VALUE
 var score_val = 0,
-	arrUsedWords = []; // array to receive used words
+	turn_m = 0,
+	arrUsedWords = [], // array to receive used words
+	arrCorrectWords = [], // array to receive correct words
+	arrWrongWords = []; // array to receive correct words
 
 // take datas of the word
 var word_article = document.getElementById('word-article'),
@@ -42,15 +42,13 @@ var word_article = document.getElementById('word-article'),
 	// total_word_list = wordlist.a1.lektion01.length;
 	var total_word_list;
 	var wordlist_actual;
-
+	var coracao = '';
 
 // Answer Buttons
 var answer_buttons = document.getElementsByClassName('answer-button');
 
 // GERATE A RANDOM WORD BASEAD IN LEKTION/THEME SELECTED
 function generate_random_word () {
-
-
 	// check first if have word for use
 	if (wordlist_actual.length == 0) {
 		endGame();
@@ -63,16 +61,11 @@ function generate_random_word () {
 
 		console.log(word.article+' '+word.singular);
 
-		//print the word in html
-		// word_singular.setAttribute("class", ""+word.article+"");
-		// word_singular.setAttribute("class", ""+class_difficulty+"");
 		word_singular.innerHTML = word.singular;
 		word_plural.innerHTML = word.plural;
-		// word_translate.innerHTML = word.translate.pt;
 		word_translate.innerHTML = word.translate[language];
 
 		changeArray();
-		// nextTurn();
 	}
 
 	if (difficulty == 'easy') {
@@ -94,21 +87,45 @@ function changeArray() {
 	arrUsedWords.push(word);
 }
 
+var lifescore_val = '';
+
 function firstTurn() {
 	wordlist_actual = lektion;
 	total_word_list = lektion.length;
-	used_word.innerHTML = 0;
+
+
+	if (total_word_list <= 25 ) {
+		lifescore_val = 5;
+	}else {
+		lifescore_val = Math.floor((total_word_list*20)/100);
+	}
+
+	var draw_heart = '<i class="fa fa-heart" aria-hidden="true"></i>';
+	var lifescore_platz = document.getElementById('lifescore');
+	coracao = document.getElementsByClassName('fa-heart');
+	for (var i = 0; i < lifescore_val; i++) {
+		lifescore_platz.innerHTML = lifescore_platz.innerHTML+draw_heart;
+	}
+
+	used_word.innerHTML = turn_m;
+	// used_word.innerHTML = +turn_m;
 	total_word.innerHTML = total_word_list;
 	document.getElementById('words').style.display = 'block';
 	document.getElementById('answer-buttons').style.display = 'block';
 	document.getElementById('selecttheme').style.display = 'none';
-
 	turn();
 }
 
 function turn() {
-	generate_random_word();
+	if (lifescore_val > 0) {
+		turn_m += 1;
+		used_word.innerHTML = turn_m;
+		generate_random_word();
+	}else {
+		endGame();
+	}
 }
+
 
 // CHECK BUTTONS AND ANSWERS
 for (var i = 0; i < answer_buttons.length; i++) {
@@ -116,41 +133,49 @@ for (var i = 0; i < answer_buttons.length; i++) {
 	var resposta = answer_buttons[i];
 	answer_buttons[i].addEventListener('click', function() {
 		if (this.value == word.article) {
+			arrCorrectWords.push(word);
 			nextTurn();
 		} else {
-			endGame();
+			arrWrongWords.push(word);
+			lifescore_val -= 1;
+			coracao[0].setAttribute("class", "fa fa-heart-o");
+			nextTurn();
 		}
 	});
 }
 
 function nextTurn() {
-	console.log(arrUsedWords.length);
-	used_word.innerHTML = arrUsedWords.length;
+	used_word.innerHTML = turn_m;
 	turn();
 }
 
 function endGame() {
 	var main = document.querySelectorAll('main')[0],
-		correctWords = '',
+		correctWords = arrCorrectWords.length,
 		icon = '',
 		message = '',
 		result_word = '';
-	document.getElementById('words').style.display = 'none';
-	document.getElementById('answer-buttons').style.display = 'none';
-	if (arrUsedWords.length == total_word_list) {
-		correctWords = arrUsedWords.length;
+		coracao_o = document.getElementsByClassName('fa-heart-o').length;
+		document.getElementById('words').style.display = 'none';
+		document.getElementById('answer-buttons').style.display = 'none';
+		percentage = (correctWords/total_word_list)*100;
+
+	if (correctWords == total_word_list) {
 		icon = '<i class="fa fa-smile-o" aria-hidden="true"></i>';
-		message = 'gut gemacht!';
-		message_result_word = '';
-	} else {
-		correctWords = (arrUsedWords.length)-1;
+		message = 'SUPER';
+		message_result_word = '100%';
+	} else if(coracao.length == 0) {
 		icon = '<i class="fa fa-frown-o" aria-hidden="true"></i>';
 		message = 'du verpasst!';
-		result_word = word.article+' '+word.singular;
 		message_result_word = '<p class="erro">Die richtige ist <strong class="'+word.article+'">'+result_word+'</strong></p>';
+	} else {
+		// correctWords = (arrUsedWords.length)-1;
+		console.log(correctWords);
+		icon = '<i class="fa fa-smile-o" aria-hidden="true"></i>';
+		message = 'gut gemacht!';
+		result_word = word.article+' '+word.singular;
+		message_result_word = '';
 	}
-	percentage = (correctWords/total_word_list)*100;
-	console.log(percentage);
 
 	main.innerHTML = main.innerHTML+'<section id="result">'+
         '<h2><strong>'+icon+'</strong>'+message+'</h2>'+message_result_word+
