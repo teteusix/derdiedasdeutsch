@@ -1,4 +1,5 @@
 /* Color */
+// $color_White: #FFF;
 $color_White: #FFF;
 $color_Purple_light: #7A64C6;
 $color_Purple_dark: #50427f;
@@ -11,6 +12,12 @@ $die_color: #DB1013;
 $das_color: #08B83C;
 
 $font-main: "PT Sans Narrow";
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 
 button {cursor:pointer;}
@@ -172,7 +179,6 @@ header.game-screen {
 		margin: 0;
 		padding: 0.2rem 0;
 		strong {color: $color_Gray_light;}
-		#lifescore {}
 		.used-word {}
 		.total-word {}
 	}
@@ -213,6 +219,13 @@ header.game-screen {
 		.word-datas li {margin-bottom: 0.4rem;}
 	}
 }
+
+		#lifescore {
+			display:block;
+			i {margin: 0 0.5%;}
+			.fa-heart {color:$color_Purple_dark;}
+			.fa-heart-o {color:$color_Purple_light;}
+		}
 
 footer.game-screen {
 	position: absolute;
